@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<title>首页</title>		
+		<link rel="stylesheet" type="text/css" href="../../css/swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="../../css/base.css">
+    	<link rel="stylesheet" type="text/css" href="../../css/main.css">	
+	</head>
+	<body>
+		<div class="home homeindex">
+			<div class="pub_header">
+				<header>
+					<ul>
+						<li class="back">
+							<a href="javascript:void(0);">
+								<img src="../../images/back.png" alt="">
+							</a>
+						</li>
+						<li><img src="../../images/logo.png"></li>
+						<li class="info">
+							<a href="javascript:void(0);">
+								<img src="../../images/info.png" alt="">
+							</a>
+						</li>
+					</ul>
+				</header>
+			</div>
+			<div class="search cf">
+				<input type="text" placeholder="快来搜搜……" class="search_con">
+			</div>
+			<!-- 轮播图 -->
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="../../images/slider.png"></div>
+					<div class="swiper-slide"><img src="../../images/slider.png"></div>
+					<div class="swiper-slide"><img src="../../images/slider.png"></div>
+					<div class="swiper-slide"><img src="../../images/slider.png"></div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+			<!-- 导航 -->
+			<div class="pub_nav cf">
+				<dl>
+					<a href="ware.html">
+						<dt><img src="../../images/type.png"></dt>
+						<dd>分类查询</dd>
+					</a>
+				</dl>
+				<dl>
+					<a href="../Shopping Cart/Shopping_cart.html">
+						<dt><img src="../../images/car.png"></dt>
+						<dd>购物车</dd>
+					</a>
+				</dl>
+				<dl>
+					<a href="../Shopping Cart/Shopping_order.html">
+						<dt><img src="../../images/myorder.png"></dt>
+						<dd>我的订单</dd>
+					</a>
+				</dl>
+				<dl>
+					<a href="../personalCenter/personal_center.html">
+						<dt><img src="../../images/home.png"></dt>
+						<dd>个人中心</dd>
+					</a>
+				</dl>
+			</div>
+			<!-- 公告 -->
+			<div class="notice">
+				<p>公告:</p>
+				<span>2016年五一福利金现已发放！</span>
+			</div>
+			<!-- 内容 -->
+			<div class="content cf">
+				<div class="item1">
+					<div class="title">
+						<span></span>
+						<h3>精品推荐</h3>
+						<span></span>
+					</div>
+					<div class="list">
+						<ul>
+							<li class="dl_mg dl_mb">
+								<img src="../../images/iphone.png" alt="">
+								<a href="productDetails.html">
+									<p>
+										商品描述XXXXXXXXXXXXX XXXXXXXXX…
+									</p>
+									<div class="num">
+										<em>108</em><span>积分</span>
+									</div>
+								</a>
+							</li>
+							<li class="dl_mb">
+								<img src="../../images/iphone.png" alt="">
+								<a href="productDetails.html">
+									<p>
+										商品描述XXXXXXXXXXXXX XXXXXXXXX…
+									</p>
+									<div class="num">
+										<em>108</em><span>积分</span>
+									</div>
+								</a>
+							</li>
+							<li class="dl_mg dl_mb">
+								<img src="../../images/iphone.png" alt="">
+								<a href="productDetails.html">
+									<p>
+										商品描述XXXXXXXXXXXXX XXXXXXXXX…
+									</p>
+									<div class="num">
+										<em>108</em><span>积分</span>
+									</div>
+								</a>
+							</li>
+							<li class="dl_mb">
+								<img src="../../images/iphone.png" alt="">
+								<a href="productDetails.html">
+									<p>
+										商品描述XXXXXXXXXXXXX XXXXXXXXX…
+									</p>
+									<div class="num">
+										<em>108</em><span>积分</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>			
+				</div>
+				<div class="item1">
+					<div class="title">
+						<span></span>
+						<h3>超值单品</h3>
+						<span></span>
+					</div>
+					<div class="list">
+						<ul>
+							<li class="dl_mg dl_mb">
+								<img src="../../images/iphone.png" alt="">
+								<a href="productDetails.html">
+									<p>
+										商品描述XXXXXXXXXXXXX XXXXXXXXX…
+									</p>
+									<div class="num">
+										<em>108</em><span>积分</span>
+									</div>
+								</a>
+							</li>
+							<li class="dl_mb">
+								<img src="../../images/iphone.png" alt="">
+								<a href="productDetails.html">
+									<p>
+										商品描述XXXXXXXXXXXXX XXXXXXXXX…
+									</p>
+									<div class="num">
+										<em>108</em><span>积分</span>
+									</div>
+								</a>
+							</li>
+							<li class="dl_mg dl_mb">
+								<img src="../../images/iphone.png" alt="">
+								<a href="productDetails.html">
+									<p>
+										商品描述XXXXXXXXXXXXX XXXXXXXXX…
+									</p>
+									<div class="num">
+										<em>108</em><span>积分</span>
+									</div>
+								</a>
+							</li>
+							<li class="dl_mb">
+								<img src="../../images/iphone.png" alt="">
+								<a href="productDetails.html">
+									<p>
+										商品描述XXXXXXXXXXXXX XXXXXXXXX…
+									</p>
+									<div class="num">
+										<em>108</em><span>积分</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>			
+				</div>
+				<div class="item1">
+					<div class="title">
+						<span></span>
+						<h3>个人喜欢</h3>
+						<span></span>
+					</div>
+					<div class="list">
+						<ul>
+							<li class="dl_mg dl_mb">
+								<img src="../../images/iphone.png" alt="">
+								<a href="productDetails.html">
+									<p>
+										商品描述XXXXXXXXXXXXX XXXXXXXXX…
+									</p>
+									<div class="num">
+										<em>108</em><span>积分</span>
+									</div>
+								</a>
+							</li>
+							<li class="dl_mb">
+								<img src="../../images/iphone.png" alt="">
+								<a href="productDetails.html">
+									<p>
+										商品描述XXXXXXXXXXXXX XXXXXXXXX…
+									</p>
+									<div class="num">
+										<em>108</em><span>积分</span>
+									</div>
+								</a>
+							</li>
+							<li class="dl_mg dl_mb">
+								<img src="../../images/iphone.png" alt="">
+								<a href="productDetails.html">
+									<p>
+										商品描述XXXXXXXXXXXXX XXXXXXXXX…
+									</p>
+									<div class="num">
+										<em>108</em><span>积分</span>
+									</div>
+								</a>
+							</li>
+							<li class="dl_mb">
+								<img src="../../images/iphone.png" alt="">
+								<a href="productDetails.html">
+									<p>
+										商品描述XXXXXXXXXXXXX XXXXXXXXX…
+									</p>
+									<div class="num">
+										<em>108</em><span>积分</span>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>			
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script src="../../js/menu_list.js"></script>
+	<script>
+		var swiper = new Swiper('.swiper-container',{
+				pagination: '.swiper-pagination',
+				loop: false,
+				grabCursor: true,
+				paginationClickable: true,
+				autoplay: 5000
+			});
+		$(function(){
+			$(".search_con").focus(function(){
+				$(this).attr("value"," ");
+			})
+		})
+	</script>
+</html>

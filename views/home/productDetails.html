@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<title>商品详情</title>		
+		<link rel="stylesheet" type="text/css" href="../../css/base.css">
+		<link rel="stylesheet" type="text/css" href="../../css/main.css">
+		<link rel="stylesheet" type="text/css" href="../../css/swiper.min.css">	
+		<style>
+				.productDetails .swiper-container{
+					height:226px;
+				}
+				.productDetails .swiper-container .swiper-slide img{
+					height:226px;
+				}
+				.swiper-pagination-fraction {
+				    bottom: 10px;
+				    left:85%;
+				    padding: 6px;
+				    background:#ccc;
+				    border-radius: 50%;
+				    left:none;
+				    width: 28px;
+				    height: 18px;
+				    line-height: 18px;
+				    font-size:12px;
+				    color:#fff;
+				}
+				.swiper-pagination-current{
+					font-size:14px;
+				}
+		</style>
+	</head>
+	<body>
+<div class="productDetails">
+	<div class="home">
+		<div class="pub_header">
+			<header>
+				<ul>
+					<li class="back">
+						<a  href="javascript:history.go(-1);">
+							<img src="../../images/back.png" alt="">
+						</a>
+					</li>
+					<li>商品详情</li>
+					<li class="info">
+						<a href="javascript:void(0);">
+							<img src="../../images/info.png" alt="">
+						</a>
+					</li>
+				</ul>
+			</header>
+		</div>
+		<!-- 导航 -->
+		<div class="pub_nav cf">
+			<dl>
+				<a href="ware.html">
+					<dt><img src="../../images/type.png"></dt>
+					<dd>分类查询</dd>
+				</a>
+			</dl>
+			<dl>
+				<a href="../Shopping Cart/Shopping_cart.html">
+					<dt><img src="../../images/car.png"></dt>
+					<dd>购物车</dd>
+				</a>
+			</dl>
+			<dl>
+				<a href="../Shopping Cart/Shopping_order.html">
+					<dt><img src="../../images/myorder.png"></dt>
+					<dd>我的订单</dd>
+				</a>
+			</dl>
+			<dl>
+				<a href="../personalCenter/personal_center.html">
+					<dt><img src="../../images/home.png"></dt>
+					<dd>个人中心</dd>
+				</a>
+			</dl>
+		</div>
+		<!-- 商品详情导航 -->
+		<div class="proDet_nav">
+			<img src="../../images/temperature.png" alt="">
+		</div>
+		<!-- <div class="swiper-container">
+		        <div class="swiper-wrapper">
+		            <div class="swiper-slide"><img src="../../images/temperature.png" alt="">Slide 1</div>
+		            <div class="swiper-slide"><img src="../../images/temperature.png" alt="">Slide 2</div>
+		            <div class="swiper-slide"><img src="../../images/temperature.png" alt="">Slide 3</div>
+		            <div class="swiper-slide"><img src="../../images/temperature.png" alt="">Slide 4</div>
+		            <div class="swiper-slide"><img src="../../images/temperature.png" alt="">Slide 5</div>
+		            <div class="swiper-slide"><img src="../../images/temperature.png" alt="">Slide 6</div>
+		            <div class="swiper-slide"><img src="../../images/temperature.png" alt="">Slide 7</div>
+		            <div class="swiper-slide"><img src="../../images/temperature.png" alt="">Slide 8</div>
+		        </div>
+		        Add Pagination
+		        <div class="swiper-pagination"></div>
+		        Add Arrows
+		        <div class="swiper-button-next"></div>
+		        <div class="swiper-button-prev"></div>
+		    </div> -->
+		<!-- 内容 -->
+		<div class="content cf">
+				<div class="proDet_info">
+						<p>20-27寸超薄苹果风格一体机电脑四核i3i5i7独显游戏 台式 整机主机</p>
+						<img src="../../images/jd.png" alt=""><br>
+						<a href="javascript:void(0);">市场价：￥5899 元</a><br>
+						<span>4800</span>
+						<em>积分</em>
+						<span class="comm_info">商品介绍</span>
+				</div>
+				<div class="proDet_sel">
+					<span>已选</span>
+					<p>黑色 23英寸 1个</p>
+					<em id="choose">选择>></em>
+				</div>
+				<div class="proDet_address cf">
+					<p>
+						<span>送至</span>
+						北京 朝阳区 三环到四环之间
+					</p>
+					<p>
+						<span>运费</span>
+						免运费
+					</p>
+				</div>		
+		</div>
+	</div>
+</div>
+	</body>
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+	<script src="../../js/menu_list.js"></script>
+	<script src="../../js/swiper.min.js"></script>
+	<script>
+	 var swiper = new Swiper('.swiper-container', {
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        pagination: '.swiper-pagination',
+        paginationType: 'fraction'
+    });
+	$(function(){
+			//购买数量的减少
+			$(".reduce").click(function(){
+			   var  o_num=$(this).parent().find(".num1");
+			   var value=parseInt(o_num.val());
+				   if(value>1){
+					  value=value-1;
+					   o_num.val(value);
+				   }
+				else{
+					return;
+				}  
+			})
+			//购买数量的增加  其中100为库存
+		   $(".add").click(function(){
+			   var  o_num=$(this).parent().find(".num1");
+				var value=parseInt(o_num.val());
+				if(value<100){
+					  value=value+1;
+					  o_num.val(value);
+				   }
+			   else{
+				   alert("库存不足");
+			   }
+		   })
+
+		   // 按钮状态
+		   $(".productDetails .det_info .color span").click(function(){
+		   	$(this).addClass("active").siblings().removeClass("active")
+		   });
+		   $(".productDetails .det_info .norms span").click(function(){
+		   	$(this).addClass("active").siblings().removeClass("active")
+		   })
+		})
+	</script>
+</html>

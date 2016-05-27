@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+     <meta name="viewport"
+       content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+     <meta name = "format-detection" content = "telephone=no">
+     <meta name="msapplication-tap-highlight" content="no">
+     <title>我的积分</title>
+     <link rel="stylesheet" type="text/css" href="../css/base.css">
+     <link rel="stylesheet" type="text/css" href="../css/main.css">
+     <link rel="stylesheet" type="text/css" href="../css/jquery.mobile-1.4.3.min.css">
+     <script src="../js/jquery-1.8.3.min.js"></script>
+    </head>
+<body style="background-color: #eeeeee;">
+  <header>
+    <div class="pub-header">
+      <div class="my-integral-title">我的积分</div>
+      <div class="header-menu my-integral-title-span">    
+         <a href="My_change.html">我的交换</a>
+      </div>
+    </div>
+  </header>
+<div class=" content my-integral">
+  <div class="top">
+    <img src="./../images/logo_1.png" alt="" class="logo_1">
+    <span>我的云钻：</span><img src="./../images/diamond.png" class="diamond">
+    <i>600</i>
+    <a href="#">
+      <img src="./../images/replace.png" alt="" class="replace">
+      <p>交换</p>
+    </a>
+  </div>
+  <div class="main">
+    <ul class="cf nav">
+      <li class="fl cur" id="one">其他积分</li>
+      <li class="fl a">|</li>
+      <li class="fl" id="two">提取记录</li>
+      <li class="fl a">|</li>
+      <li class="fl" id="three">随便看看</li>
+    </ul>
+    <div class="detail first">
+        <div style="display: none;">
+            <a href="#">
+              <img src="./../images/add.png" alt="" class="add">
+              <p class="null gary">暂无交换其他积分，请先交换</p>
+            </a>
+        </div>
+        <div class="tip gary">
+            <img src="./../images/tip.png">
+            <span>以下积分只有提取到所属平台账号后才可使用</span>
+        </div>
+        <div class="cont cf">
+            <div class="left fl">
+                <img src="./../images/img_1.png" alt="" class="fl img_1">
+                <p>卧趣</p>
+                <p class="red">500趣币</p>
+            </div>
+            <div class="right fr">
+                <a href="#" class="change fl">
+                  <img src="./../images/replace.png" alt="">
+                  <p>交换</p>
+                </a>
+                <a href="#" class="extract fl">
+                  <img src="./../images/extract.png" alt="">
+                  <p>提取</p>
+                </a>
+            </div>
+        </div>
+        <div class="cont cf">
+            <div class="left fl">
+                <img src="./../images/img_2.png" alt="" class="fl img_1">
+                <p>户外三夫</p>
+                <p class="red">400积分</p>
+            </div>
+            <div class="right fr">
+                <a href="#" class="change fl">
+                  <img src="./../images/replace.png" alt="">
+                  <p>交换</p>
+                </a>
+                <a href="#" class="extract fl">
+                  <img src="./../images/extract.png" alt="">
+                  <p>提取</p>
+                </a>
+            </div>
+        </div>
+        <div class="cont cf">
+            <div class="left fl">
+                <img src="./../images/img_3.png" alt="" class="fl img_1">
+                <p>乐视</p>
+                <p class="red">700乐豆</p>
+            </div>
+            <div class="right fr">
+                <a href="#" class="change fl">
+                  <img src="./../images/replace.png" alt="">
+                  <p>交换</p>
+                </a>
+                <a href="#" class="extract fl">
+                  <img src="./../images/extract.png" alt="">
+                  <p>提取</p>
+                </a>
+            </div>
+        </div> 
+    </div>
+    <div class="detail middle">
+        <div class="null-record" style="display: none;">暂无任何提取记录</div>
+        <ul class="list cf">
+            <li class="fl">
+                <div class="num">卧趣账号：<span>15222888989</span></div>
+                <div class="state">当前状态：<span class="reds">提取中</span></div>
+            </li>
+            <li class="fr">
+                <div class="time">2015.1.2.13:00</div>
+                <div class="money reds">100趣币</div>
+            </li> 
+        </ul>
+        <ul class="list cf">
+            <li class="fl">
+                <div class="num">苏宁账号：<span>15222888989</span></div>
+                <div class="state">当前状态：<span class="reds">提取成功</span></div>
+            </li>
+            <li class="fr">
+                <div class="time">2015.1.2.13:00</div>
+                <div class="money reds">1000云钻</div>
+            </li> 
+        </ul>
+        <ul class="list cf">
+            <li class="fl">
+                <div class="num">乐视账号：<span>15222888989</span></div>
+                <div class="state">当前状态：<span class="reds">提取失败</span></div>
+            </li>
+            <li class="fr">
+                <div class="time">2015.1.2.13:00</div>
+                <div class="money reds">500乐豆</div>
+            </li> 
+        </ul>
+      </div>           
+    <div class="detail last">
+         <img src="./../images/null.png" alt=""> 
+         <p>敬请期待！</p>
+    </div>
+  </div>
+</div>
+
+</body>
+<script type="text/javascript"> 
+     $(function(){
+            $('.middle,.last').hide();
+            $('.nav li').click(function(){
+            $(this).addClass('cur').siblings().removeClass('cur');     
+            })
+        })
+     $(document).ready(function() {
+      $("#one").click(function() {
+            $(".middle").hide();
+            $(".last").hide();
+            $(".first").show();       
+      });
+      $("#two").click(function() {
+            $(".first").hide();
+            $(".middle").show();
+            $(".last").hide();
+      });
+      $("#three").click(function() {
+            $(".first").hide();
+            $(".middle").hide();
+            $(".last").show();
+      });
+    });
+</script>
+</html>

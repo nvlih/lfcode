@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<title>分类列表</title>		
+		<link rel="stylesheet" type="text/css" href="../../css/base.css">
+    	<link rel="stylesheet" type="text/css" href="../../css/main.css">	
+    	<style>
+		 #tiles{position:relative;} 
+       	 #tiles li{display:none;  width: 100%; left: 0!important;} 
+    	</style>
+	</head>
+	<body>
+<div class="home classList">
+	<div class="pub_header">
+		<header>
+			<ul>
+				<li class="back">
+					<a  href="javascript:history.go(-1);">
+						<img src="../../images/back.png" alt="">
+					</a>
+				</li>
+				<li>洋酒</li>
+				<li class="info">
+					<a href="javascript:void(0);">
+						<img src="../../images/info.png" alt="">
+					</a>
+				</li>
+			</ul>
+		</header>
+	</div>
+	<!-- 导航 -->
+	<div class="pub_nav cf">
+		<dl>
+			<a href="ware.html">
+				<dt><img src="../../images/type.png"></dt>
+				<dd>分类查询</dd>
+			</a>
+		</dl>
+		<dl>
+			<a href="../Shopping Cart/Shopping_cart.html">
+				<dt><img src="../../images/car.png"></dt>
+				<dd>购物车</dd>
+			</a>
+		</dl>
+		<dl>
+			<a href="../Shopping Cart/Shopping_order.html">
+				<dt><img src="../../images/myorder.png"></dt>
+				<dd>我的订单</dd>
+			</a>
+		</dl>
+		<dl>
+			<a href="../personalCenter/personal_center.html">
+				<dt><img src="../../images/home.png"></dt>
+				<dd>个人中心</dd>
+			</a>
+		</dl>
+	</div>
+	<!-- 搜索导航 -->
+	<div class="search_nav cf">
+		<ul>
+			<li><a href="javascript:void(0);">默认</a></li>
+			<li>
+				<a href="javascript:void(0);">价格 <img src="../../images/Price.png" alt=""></a>			
+			</li>
+			<li>
+				<a href="javascript:void(0);">筛选 <img src="../../images/triangle.png" alt=""></a>		
+			</li>
+		</ul>
+	</div>
+	<!-- 搜索 -->
+	<div class="search cf" id='autocompleter'>
+		<input type="text" placeholder="快来搜搜……" id="searchInput" name="searchInput">
+		<ul class="tip">
+			<li>122222</li>
+			<li>2222</li>
+			<li>3333</li>
+		</ul>
+	</div>
+	
+	<!-- 内容 -->
+	<div class="content cf"  id="main" role="main">
+			<ul id="tiles">
+				<li>
+					<div class="list1">
+						<div class="left">
+							<img src="../../images/Alcohol.png" alt="">
+						</div>
+						<div class="mid">
+							<p>法国特嘉葡萄酒1</p>
+							<div class="price">
+								<span>4800</span>
+								<em>积分</em>
+							</div>
+						</div>
+						<div class="right">
+							<span>自营</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="list1">
+						<div class="left">
+							<img src="../../images/Alcohol.png" alt="">
+						</div>
+						<div class="mid">
+							<p>法国特嘉葡萄酒hao</p>
+							<div class="price">
+								<span>4800</span>
+								<em>积分</em>
+							</div>
+						</div>
+						<div class="right">
+							<span>自营</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="list1">
+						<div class="left">
+							<img src="../../images/Alcohol.png" alt="">
+						</div>
+						<div class="mid">
+							<p>法国特嘉葡萄酒好</p>
+							<div class="price">
+								<span>4800</span>
+								<em>积分</em>
+							</div>
+						</div>
+						<div class="right">
+							<span>自营</span>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="list1">
+						<div class="left">
+							<img src="../../images/Alcohol.png" alt="">
+						</div>
+						<div class="mid">
+							<p>法国特嘉葡萄酒</p>
+							<div class="price">
+								<span>4800</span>
+								<em>积分</em>
+							</div>
+						</div>
+						<div class="right">
+							<span>自营</span>
+						</div>
+					</div>
+				</li>
+			</ul>
+	</div>
+</div>
+	</body>
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+	<script src="../../js/menu_list.js"></script>
+	<script src="../../js/jquery.wookmark.js"></script>
+	<script>
+		$(function(){
+			$("#tiles li").show();
+			$(".search_nav li a").click(function(){
+	    		$(".search_nav li a").removeClass("active");
+	  			 	$(this).addClass("active").siblings().removeClass("active");
+		  	});
+
+			// 自动补全
+			$('#searchInput').on('input propertychange', function() {  
+				    if($(this).val() !== ''){
+						$('.tip').show();
+				    }else{
+				    	$('.tip').hide();
+				    }
+			    $(".tip li").click(function(){
+	   				$('#searchInput').val($(this).html());
+	   				$('.tip').hide();
+	   			});
+			});
+		    $('#searchInput').focus(function(){
+		    	$(this).val('');
+   			});
+			
+   			$('#searchInput').keyup(function(){
+          		$(".tip li")
+          		.hide()
+                .filter(":contains('"+( $(this).val() )+"')")
+                .show();
+   			});
+
+       		$('body').click(function(){
+       			$('.tip').hide();
+       		})
+       			// 自动补全结束______
+			});
+		var handler = null;
+        var options = {
+          autoResize: true, 
+          container: $('#main')
+        };       
+        function onScroll(event) {
+          var closeToBottom = ($(window).scrollTop() + $(window).height() > $(document).height() - 100);
+          if(closeToBottom) {
+            var items = $('#tiles li');
+            var firstTen = items.slice(0, 10);
+            $('#tiles').append(firstTen.clone());
+            
+            if(handler) handler.wookmarkClear();
+            
+            handler = $('#tiles li');
+            handler.wookmark(options);
+          }
+        };
+      
+        $(document).ready(new function() {
+         
+          $(document).bind('scroll', onScroll);
+          
+          handler = $('#tiles li');
+          handler.wookmark(options);
+        });
+	</script>
+</html>

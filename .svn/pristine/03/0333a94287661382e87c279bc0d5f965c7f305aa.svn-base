@@ -1,0 +1,44 @@
+/*==========以下部分是Validform必须的===========*/
+.Validform_checktip{
+	margin-left:8px;
+	line-height:20px;
+	height:20px;
+	overflow:hidden;
+	color:#999;
+	font-size:12px;
+}
+.Validform_right{
+	/*position: fixed;
+	top: 200px;*/
+	color:#fff;
+	padding:10px 10px 10px 25px;
+	background:url(../images/right.png) no-repeat 10px center #000;
+	opacity: 0.8;
+	filter:alpha(opacity=80);
+	border-radius: 5px; 
+}
+.Validform_wrong{
+	color:#fff;
+	padding:10px 10px 10px 25px;
+	white-space:nowrap;
+	background:url(../images/error.png) no-repeat 10px center #000;
+	opacity: 0.8;
+	filter:alpha(opacity=80);
+	border-radius: 5px; 
+}
+.Validform_loading{
+	padding:10px 10px 10px 25px;
+	background:url(../images/onLoad.gif) no-repeat left center #000;
+	opacity: 0.8;
+	filter:alpha(opacity=80);
+	border-radius: 5px; 
+}
+.Validform_error{
+	background-color:#fff;
+}
+#Validform_msg{color:#fff; background-color: #000; opacity: 0.7; filter: alpha(opacity=70); border-radius: 5px; font: 12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif; width:280px; -webkit-box-shadow:2px 2px 3px #aaa; -moz-box-shadow:2px 2px 3px #aaa; position:absolute; top:0px; right:50px; z-index:99999; display:none;filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#999999');}
+#Validform_msg .iframe{position:absolute; left:0px; top:-1px; z-index:-1;}
+#Validform_msg .Validform_title{height:10px;position:relative;}
+#Validform_msg a.Validform_close:link,#Validform_msg a.Validform_close:visited{line-height:22px; position:absolute; right:8px; top:0px; color:#fff; text-decoration:none;}
+#Validform_msg a.Validform_close:hover{color:#cc0;}
+#Validform_msg .Validform_info{padding:0 10px 10px;text-align:center;}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<title>编辑收货地址</title>		
+		<link rel="stylesheet" type="text/css" href="../../css/base.css">
+    	<link rel="stylesheet" type="text/css" href="../../css/main.css">	
+	</head>
+	<body>
+<div class="home shopp_editAdd">
+	<div class="pub_header">
+		<header>
+			<ul>
+				<li class="back">
+					<a href="javascript:void(0);">
+						<img src="../../images/back.png" alt="">
+					</a>
+				</li>
+				<li>编辑收货地址</li>
+				<li class="info">
+					<a href="javascript:void(0);">
+						<img src="../../images/info.png" alt="">
+					</a>
+				</li>
+			</ul>
+		</header>
+	</div>	
+	<!-- 导航 -->
+	<div class="pub_nav cf">
+		<dl>
+			<a href="../home/ware.html">
+				<dt><img src="../../images/type.png"></dt>
+				<dd>分类查询</dd>
+			</a>
+		</dl>
+		<dl>
+			<a href="../Shopping Cart/Shopping_cart.html">
+				<dt><img src="../../images/car.png"></dt>
+				<dd>购物车</dd>
+			</a>
+		</dl>
+		<dl>
+			<a href="../Shopping Cart/Shopping_order.html">
+				<dt><img src="../../images/myorder.png"></dt>
+				<dd>我的订单</dd>
+			</a>
+		</dl>
+		<dl>
+			<a href="../personalCenter/personal_center.html">
+				<dt><img src="../../images/home.png"></dt>
+				<dd>个人中心</dd>
+			</a>
+		</dl>
+	</div>
+	<!-- 内容 -->
+	<div class="content cf">
+			<div class="border">
+			</div>
+			<form name="address" class="editaddress">
+				<div class="list cf">
+					<label class="fl">收件人：</label>
+					<input type="text" value="张三丰" class="fl">
+				</div>
+				<div class="list cf">
+					<label class="fl">联系方式：</label>
+					<input type="text" value="134****2468" class="fl">
+				</div>
+				<div class="list cf">
+					<label class="fl">所在地区：</label>
+					<input type="text" value="张家口市怀来县" class="fl" readonly>
+					<select name="" id="" class="fr">
+						<option value="">北京市</option>
+						<option value="">昌平区</option>
+						<option value="">海淀区</option>
+					</select>
+				</div>
+				<div class="list cf">
+					<input type="text" class="cf xxdz" value="详细地址:传媒大学东大街1号京汇大厦甲座B楼1125室">
+				</div>
+				<div class="pro_info cf">
+					<div class="ui-check">
+                        <i class="check-ico"></i>
+                        <input type="checkbox" class="cardType" id="platinum">
+                        <label for="platinum" class="check-label">设为默认地址（注：每次下单时会使用该地址）</label>
+                    </div>
+				</div>
+			</form>
+	</div>
+	<div class="pub_space"></div>
+	<!-- 底部 -->
+	<div class="pub_footer">
+		<a href="###">保存并使用</a>
+	</div>
+</div>
+	</body>
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+	<script src="../../js/menu_list.js"></script>
+	<script>
+        $(function(){
+            $("#platinum").click(function(){ 
+                if($(this).is(":checked")){
+                    $(this).siblings(".check-ico").addClass("checked-ico");
+                }else{
+                    $(this).siblings(".check-ico").removeClass("checked-ico");
+                } 
+            });
+        })
+    </script>
+</html>

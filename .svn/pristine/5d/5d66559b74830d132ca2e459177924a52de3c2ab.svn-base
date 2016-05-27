@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <!-- <meta name="viewport" content="initial-scale=1.0, user-scalable=no" /> -->
+    <title>密码设置</title>
+    <link rel="stylesheet" type="text/css" href="../../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <script src="../../js/jquery-1.10.2.min.js"></script>
+    <script src="../../js/menu_list.js"></script>
+    <script src="../../js/Validform_v5.3.2.js"></script>
+</head>
+<body>
+    <div class="password_settings">
+    <!-- 公共头部 -->
+        <div class="pub_header">
+            <header>
+                <ul>
+                    <li class="back">
+                        <a href="javascript:history.go(-1);">
+                            <img src="../../images/back.png" alt="">
+                        </a>
+                    </li>
+                    <li>密码设置</li>
+                    <li class="info">
+                        <a href="javascript:void(0);">
+                            <img src="../../images/info.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </header>
+        </div>
+            <!-- 导航 -->
+       <div class="pub_nav cf">
+            <dl>
+                <a href="ware.html">
+                    <dt><img src="../../images/type.png"></dt>
+                    <dd>分类查询</dd>
+                </a>
+            </dl>
+            <dl>
+                <a href="../Shopping Cart/Shopping_cart.html">
+                    <dt><img src="../../images/car.png"></dt>
+                    <dd>购物车</dd>
+                </a>
+            </dl>
+            <dl>
+                <a href="../Shopping Cart/Shopping_order.html">
+                    <dt><img src="../../images/myorder.png"></dt>
+                    <dd>我的订单</dd>
+                </a>
+            </dl>
+            <dl>
+                <a href="personal_center.html">
+                    <dt><img src="../../images/home.png"></dt>
+                    <dd>个人中心</dd>
+                </a>
+            </dl>
+        </div>
+        <div class="content">
+            <p class="change-password">修改密码</p>
+            <form action="" class="passwordform">
+                <div class="list cf">
+                    <div class="title fl">员工编号</div>
+                    <input type="text" class="fl" placeholder="请输入员工编号" datatype="*2-18" ajaxurl=""  nullmsg="请输入员工编号！" errormsg="编号错误" >
+                </div>
+                <div class="list cf">
+                    <div class="title fl">原 密 码</div>
+                    <input type="text" class="fl" placeholder="请输入原密码" datatype="*8-12" ajaxurl="" nullmsg="请输入密码！" errormsg="密码错误" >
+                </div>
+                <div class="list cf">
+                    <div class="title fl">新 密 码</div>
+                    <input type="text" class="fl" name="password1" placeholder="请输入8-12位数字+字母" datatype="*8-12" ajaxurl="" nullmsg="请输入新密码！" errormsg="请输入8-12位数字+字母" >
+                </div>
+                <div class="list cf">
+                    <div class="title fl">确认密码</div>
+                    <input type="text" class="fl" placeholder="请再次输入新密码" ajaxurl="" nullmsg="请确认密码！" errormsg="密码不一致" recheck="password1" >
+                </div>
+                <input class="btn" value="确 定" type="button" id="btn_sub" />
+            </form>
+        </div>
+    </div>
+    <script>
+        $(".passwordform").Validform({
+            btnSubmit:"#btn_sub", 
+            tiptype:1, 
+            datatype:{
+                "*2-18": /^[^\s]{2,18}$/,
+                "*8-12": /^[^\s]{8,12}$/
+            },
+            usePlugin:{
+                swfupload:{},
+                datepicker:{},
+                passwordstrength:{},
+                jqtransform:{
+                    selector:"select,input"
+                }
+            },
+            beforeCheck:function(curform){  
+            },
+            beforeSubmit:function(curform){  
+            },
+            callback:function(data){
+            }
+        });
+    </script>
+</body>
+</html>

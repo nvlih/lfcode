@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<title>商品详情</title>		
+		<link rel="stylesheet" type="text/css" href="../../css/base.css">
+    	<link rel="stylesheet" type="text/css" href="../../css/main.css">	
+	</head>
+	<body>
+<div class="productDetails">
+	<div class="home">
+		<div class="pub_header">
+			<header>
+				<ul>
+					<li class="back">
+						<a href="javascript:void(0);">
+							<img src="../../images/back.png" alt="">
+						</a>
+					</li>
+					<li>商品详情</li>
+					<li class="info">
+						<a href="javascript:void(0);">
+							<img src="../../images/info.png" alt="">
+						</a>
+					</li>
+				</ul>
+			</header>
+		</div>
+		<!-- 导航 -->
+		<div class="pub_nav cf">
+			<dl>
+				<a href="ware.html">
+					<dt><img src="../../images/type.png"></dt>
+					<dd>分类查询</dd>
+				</a>
+			</dl>
+			<dl>
+				<a href="../Shopping Cart/Shopping_cart.html">
+					<dt><img src="../../images/car.png"></dt>
+					<dd>购物车</dd>
+				</a>
+			</dl>
+			<dl>
+				<a href="../Shopping Cart/Shopping_order.html">
+					<dt><img src="../../images/myorder.png"></dt>
+					<dd>我的订单</dd>
+				</a>
+			</dl>
+			<dl>
+				<a href="../personalCenter/personal_center.html">
+					<dt><img src="../../images/home.png"></dt>
+					<dd>个人中心</dd>
+				</a>
+			</dl>
+		</div>
+		<!-- 商品详情导航 -->
+		<div class="proDet_nav">
+			<img src="../../images/temperature.png" alt="">
+		</div>
+		<!-- 内容 -->
+		<div class="content cf">
+				<div class="proDet_info">
+						<p>20-27寸超薄苹果风格一体机电脑四核i3i5i7独显游戏 台式 整机主机</p>
+						<img src="../../images/jd.png" alt=""><br>
+						<a href="javascript:void(0);">市场价：￥5899 元</a><br>
+						<span>4800</span>
+						<em>积分</em>
+				</div>
+				<div class="proDet_sel">
+					<span>已选</span>
+					<p>黑色 23英寸 1个</p>
+					<em id="choose">选择>></em>
+				</div>
+				<div class="proDet_address cf">
+					<p>
+						<span>送至</span>
+						北京 朝阳区 三环到四环之间
+					</p>
+					<p>
+						<span>运费</span>
+						免运费
+					</p>
+				</div>		
+		</div>
+	</div>
+	<div class="pic_big"></div>
+	<div class="pic_pop_box">
+		<div class="details">
+					<div class="left">
+						<img src="../../images/temperature1.png" alt="">
+					</div>
+					<div class="right">
+						<span>4800</span>
+						<em>积分</em>
+						<p>库存：4573</p>
+						<p>选择 颜色 规格</p>
+					</div>
+				</div>
+				<div class="det_info">
+					<div class="color">
+						<p>颜色</p>
+						<span>白色</span>
+						<span>白色</span>
+						<span>白色</span>
+					</div>
+					<div class="norms">
+						<p>规格</p>
+						<span>23英寸</span>
+						<span>23英寸</span>
+						<span>23英寸</span>
+					</div>
+					<div class="number">
+						<p>数量</p>
+						<div class="operate">
+							<span class="reduce">-</span>
+							<span>
+								<input type="text" class="num1" value="1">
+							</span>
+							<span class="add">+</span>
+						</div>
+					</div>
+				</div>
+				<div class="proDet_btn">
+					<a class="car" href="../Shopping Cart/Shopping_cart.html">加入购物车</a>
+					<a class="buy">立刻购买</a>
+				</div>
+	</div>
+</div>
+	</body>
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+	<script src="../../js/menu_list.js"></script>
+	<script>
+	$(function(){
+		 	$(".pic_big").hide();
+		 	$(".pic_pop_box").hide();
+			$("#choose").click(function(){
+				$(".pic_big").show();
+				$(".pic_pop_box").show();
+			});
+			$(".pic_big").click(function(){
+				$(".pic_big").hide();
+			 $(".pic_pop_box").hide();
+			});
+			$(".car").click(function(){
+				$(".pic_big").hide();
+			 $(".pic_pop_box").hide();
+			});
+			$(".buy").click(function(){
+				$(".pic_big").hide();
+			 $(".pic_pop_box").hide();
+			});
+			//购买数量的减少
+    $(".reduce").click(function(){
+               var  o_num=$(this).parent().find(".num1");
+               var value=parseInt(o_num.val());
+                   if(value>1){
+                      value=value-1;
+                       o_num.val(value);
+                   }
+                else{
+                    return;
+                }  
+            })
+//购买数量的增加  其中100为库存
+           $(".add").click(function(){
+               var  o_num=$(this).parent().find(".num1");
+                var value=parseInt(o_num.val());
+                if(value<100){
+                      value=value+1;
+                      o_num.val(value);
+                   }
+               else{
+                   alert("库存不足");
+               }
+           })
+		})
+	</script>
+</html>

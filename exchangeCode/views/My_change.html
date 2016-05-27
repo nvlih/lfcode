@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+     <meta name="viewport"
+       content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+     <meta name = "format-detection" content = "telephone=no">
+     <meta name="msapplication-tap-highlight" content="no">
+     <title>我的交换</title>
+     <link rel="stylesheet" type="text/css" href="../css/base.css">
+     <link rel="stylesheet" type="text/css" href="../css/main.css">
+     <link rel="stylesheet" type="text/css" href="../css/percircle.css">
+     <link rel="stylesheet" type="text/css" href="../css/jquery.mobile-1.4.3.min.css">
+     <script src="../js/jquery-1.8.3.min.js"></script>
+     <script src="../js/percircle.js"></script>
+     <script src="../js/zepto.js"></script>
+     <script src="../js/touch.js"></script>
+     <!-- <script src="../js/jquery.mobile-1.4.3.min.js"></script> -->
+     <style type="text/css">
+         html,body{overflow: hidden;}
+     .list{width:130%;-webkit-transition:all 0.3s linear;}
+        .delete{width:20%;margin-left:5%;}
+        .selected{-webkit-transform: translate(-20%,0);-webkit-transition:all 0.3s linear;}
+     </style>
+    </head>
+<body>
+  <header>
+    <div class="pub-header">
+      <div class="back">
+        <a href="javascript:history.go(-1);">
+          <img src="./../images/back.png" alt="">
+        </a>
+      </div>
+      <div>我的交换</div> 
+    </div>
+  </header>
+  <div class=" content my-change">
+     <div class="main">
+        <ul class="cf nav">
+          <li class="fl cur" id="one">交换中</li>
+          <li class="fl a">|</li>
+          <li class="fl" id="two">交换成功</li>
+          <li class="fl a">|</li>
+          <li class="fl" id="three">已取消</li>
+        </ul>
+        <div class="detail one">
+          <div class="tip" style="display: none;"><p>暂无相关交换记录</p></div>
+          <div class="list" id="list01" data-id="list01">
+              <div style="width: 30%">
+                <p class="time">2015.1.2.13:00</p>
+                <div class="fl left">
+                    <div class="out">
+                        <span>换出</span>
+                        <img src="./../images/out.png" alt="" class="out_img">
+                        <span>10云钻</span>
+                    </div>
+                    <div class="out margin">
+                        <span>换入</span>
+                        <img src="./../images/enter.png" alt="" class="out_img">
+                        <span>20乐豆</span>
+                    </div>
+                </div>
+                <div class="fr right">
+                    <div id="orangecircle" class="c100 p45 small orange">
+                      <span>45%</span>
+                      <div class="slice">
+                          <div class="bar"></div>
+                          <div class="fill"></div>
+                      </div>
+                    </div> 
+                    <p>完成进度</p>     
+                </div>
+              </div>
+              <div class=""></div>  
+          </div>
+        </div>
+        <div class="detail one">
+          <div class="tip" style="display: none;"><p>暂无相关交换记录</p></div>
+          <div class="list" id="list01" data-id="list01">
+            <p class="time">2015.1.2.13:00</p>
+            <div class="fl left">
+                <div class="out">
+                    <span>换出</span>
+                    <img src="./../images/out.png" alt="" class="out_img">
+                    <span>10云钻</span>
+                </div>
+                <div class="out margin">
+                    <span>换入</span>
+                    <img src="./../images/enter.png" alt="" class="out_img">
+                    <span>20乐豆</span>
+                </div>
+            </div>
+            <div class="fr right">
+                <div id="orangecircle" class="c100 p45 small orange">
+                  <span>45%</span>
+                  <div class="slice">
+                      <div class="bar"></div>
+                      <div class="fill"></div>
+                  </div>
+                </div> 
+                <p>完成进度</p>     
+            </div>
+            <a class="delete">撤销</a>
+          </div>
+        </div>
+        <div class="detail two">
+         
+
+        </div>
+        <div class="detail three">
+          
+
+        </div>
+     </div>
+  </div>
+
+</body>
+<script type="text/javascript"> 
+    $(function(){
+        $(".list").on("swipeLeft",function(){
+              $(this).addClass('selected').siblings().removeClass('selected');
+              $(this).find(".delete").on("click",function(){
+                  var touchId = $(this).parents(".list").attr("data-id");
+                  console.log(touchId)
+                  //执行删除效果
+                  $("#"+touchId).css("border","0");
+                  $("#"+touchId).remove()
+              })
+          }).on("swipeRight",function(){
+              $(this).removeClass('selected');
+          });
+        })
+     $(function(){
+        $('.three,.two').hide();
+        $('.nav li').click(function(){
+        $(this).addClass('cur').siblings().removeClass('cur');     
+        })
+    })
+    $(document).ready(function() {
+      $("#one").click(function() {
+            $(".two").hide();
+            $(".three").hide();
+            $(".one").show();       
+      });
+      $("#two").click(function() {
+            $(".one").hide();
+            $(".two").show();
+            $(".three").hide();
+      });
+      $("#three").click(function() {
+            $(".one").hide();
+            $(".two").hide();
+            $(".three").show();
+      });
+    });
+   $(function() {
+    function prevent_default(e) {
+        e.preventDefault();
+    }
+    function disable_scroll() {
+        $(document).on('touchmove', prevent_default);
+    }
+    function enable_scroll() {
+        $(document).unbind('touchmove', prevent_default)
+    }
+    var x;
+    var flag = false;
+    $('.swipe-delete li > a')
+        .on('touchstart', function(e) {
+            setTimeout(function(){
+                $('.swipe-delete li > a').css('left', '0px') // close em all
+            }, 0);
+            x = e.originalEvent.targetTouches[0].pageX // anchor point
+        })
+        .on('touchmove', function(e) {
+            if(flag) {
+                return;
+            }
+            var change = e.originalEvent.targetTouches[0].pageX - x;
+            change = Math.min(Math.max(-100, change), 0) // restrict to -100px left, 0px right
+            e.currentTarget.style.left = change + 'px'
+            if (change < -10) {
+                disable_scroll() // disable scroll once we hit 10px horizontal slide
+            }
+        })
+        .on('touchend', function(e) {
+            if(flag) {
+                flag = false;
+                return;
+            }
+            var left = parseInt(e.currentTarget.style.left)
+            var new_left;
+            if (left < -35) {
+                flag = true;
+                new_left = '-100px'
+            } else if (left > 35) {
+                new_left = '100px'
+            } else {
+                new_left = '0px'
+            }
+            // e.currentTarget.style.left = new_left
+            $(e.currentTarget).animate({left: new_left}, 200)
+            enable_scroll()
+
+        });
+    $('li .delete-btn').on('touchend', function(e) {
+        e.preventDefault()
+        $(this).parents('li').slideUp('fast', function() {
+            $(this).remove()
+        })
+    })
+    $('li .edit-btn').on('touchend', function(e) {
+        e.preventDefault()
+        $(this).parents('li').children('a').html('edited')
+    })
+});
+</script>
+</html>

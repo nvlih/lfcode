@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <!-- <meta name="viewport" content="initial-scale=1.0, user-scalable=no" /> -->
+    <title>查看物流</title>
+    <link rel="stylesheet" type="text/css" href="../../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../../css/main.css"> 
+    <script src="../../js/jquery-1.10.2.min.js"></script>
+    <script src="../../js/menu_list.js"></script>
+    <style>
+        #tiles{position:relative;} 
+        #tiles li{display:none;left: 0!important;} 
+        .view_Logistics .top_ban{
+            padding:10px 0;
+            background:#fff;
+            border-bottom:1px solid #ccc;
+            margin-bottom:10px;
+        }
+        .view_Logistics .list{
+        
+         padding:10px 10px 0 10px;
+        }
+        .view_Logistics .list .icon{
+           width:15%;
+           float: left;text-align:center;
+           margin-top:20px;
+        }
+         .view_Logistics .list .font{
+           width:85%;
+           float: left;
+           font-size:12px;color: #999999;
+           padding-bottom:10px;
+           border-bottom:1px solid #ccc;
+        }
+        .view_Logistics .list .font p{
+         margin-bottom:10px;padding-top:10px;
+        }
+        .view_Logistics .list .active_bl{
+           color: #49cef9;
+        }
+        .view_Logistics .list .active_red{
+          color: #ef6060;
+        }
+        .view_Logistics .goods-box .pic{
+           width:22%;padding-right:10px;
+           text-align: center;
+        }
+      .view_Logistics .goods-box .pic img{
+        width:90%
+              } 
+         .view_Logistics .goods-box .detail{
+           width:73%
+        }
+    </style>
+</head>
+<body>
+    <div class="view_Logistics already_finish">
+    <!-- 公共头部 -->
+        <div class="pub_header">
+            <header>
+                <ul>
+                    <li class="back">
+                        <a href="javascript:history.go(-1);">
+                            <img src="../../images/back.png" alt="">
+                        </a>
+                    </li>
+                    <li>查看物流</li>
+                    <li class="info">
+                        <a href="javascript:void(0);">
+                            <img src="../../images/info.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </header>
+        </div>
+            <!-- 导航 -->
+        <div class="pub_nav cf">
+            <dl>
+                <a href="ware.html">
+                    <dt><img src="../../images/type.png"></dt>
+                    <dd>分类查询</dd>
+                </a>
+            </dl>
+            <dl>
+                <a href="../Shopping Cart/Shopping_cart.html">
+                    <dt><img src="../../images/car.png"></dt>
+                    <dd>购物车</dd>
+                </a>
+            </dl>
+            <dl>
+                <a href="../Shopping Cart/Shopping_order.html">
+                    <dt><img src="../../images/myorder.png"></dt>
+                    <dd>我的订单</dd>
+                </a>
+            </dl>
+            <dl>
+                <a href="personal_center.html">
+                    <dt><img src="../../images/home.png"></dt>
+                    <dd>个人中心</dd>
+                </a>
+            </dl>
+        </div>
+        <div class="content" id="main" role="main">
+            <div class="top_ban">
+              <a href="javascript:;">
+                  <div class="goods-box cf">
+                      <div class="pic fl"><img src="../../images/diannao.png" alt=""></div>
+                      <p class="detail fl">20-27寸超薄苹果风格一体机电脑四核i3i5i7独显游戏 台式整机主机</p>
+                  </div>      
+              </a>
+            </div>
+            <div class="cf list">
+                  <ul>
+                      <li>
+                          <div class="fl icon">
+                            <img src="../../images/circle_cl.png" alt="">
+                          </div>
+                          <div class="fl font active_bl">
+                             <p>这里是物流信息，这里是物流信息，这里是物流信息。这里是物流信息，这里是物流信息。</p>
+                             <span>
+                              2016-3-21  01:24:19
+                             </span>
+                          </div> 
+                      </li>
+                       <li>
+                          <div class="fl icon">
+                            <img src="../../images/circle_gr.png" alt="">
+                          </div>
+                          <div class="fl font">
+                             <p>这里是物流信息，这里是物流信息，这里是物流信息。</p>
+                             <span>
+                              2016-3-21  01:24:19
+                             </span>
+                          </div> 
+                      </li>
+                      <li>
+                          <div class="fl icon">
+                            <img src="../../images/circle_gr.png" alt="">
+                          </div>
+                          <div class="fl font">
+                             <p>这里是物流信息，这里是物流信息，这里是物流信息。</p>
+                             <span>
+                              2016-3-21  01:24:19
+                             </span>
+                          </div> 
+                      </li>
+                      <li>
+                          <div class="fl icon">
+                            <img src="../../images/circle_rd.png" alt="">
+                          </div>
+                          <div class="fl font active_red">
+                             <p>您的订单已配送至海航进出口公司 。</p>
+                             <span>
+                              2016-3-18  01:24:19
+                             </span>
+                          </div> 
+                      </li>
+                       <li>
+                          <div class="fl icon">
+                            <img src="../../images/circle_gr.png" alt="">
+                          </div>
+                          <div class="fl font">
+                             <p>这里是物流信息，这里是物流信息，这里是物流信息。</p>
+                             <span>
+                              2016-3-21  01:24:19
+                             </span>
+                          </div> 
+                      </li>
+                       <li>
+                          <div class="fl icon">
+                            <img src="../../images/circle_gr.png" alt="">
+                          </div>
+                          <div class="fl font">
+                             <p>这里是物流信息，这里是物流信息，这里是物流信息。</p>
+                             <span>
+                              2016-3-21  01:24:19
+                             </span>
+                          </div> 
+                      </li>
+                  </ul>
+                  
+            </div>
+        </div>
+    </div>
+</body>
+</html>

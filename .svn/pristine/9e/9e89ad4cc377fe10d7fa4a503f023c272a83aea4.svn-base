@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <!-- <meta name="viewport" content="initial-scale=1.0, user-scalable=no" /> -->
+    <title>设置</title>
+    <link rel="stylesheet" type="text/css" href="../../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../../css/main.css">
+    <script src="../../js/jquery-1.10.2.min.js"></script>
+    <script src="../../js/menu_list.js"></script>
+</head>
+<body>
+    <div class="install">
+    <!-- 公共头部 -->
+        <div class="pub_header">
+            <header>
+                <ul>
+                    <li class="back">
+                        <a href="javascript:history.go(-1);">
+                            <img src="../../images/back.png" alt="">
+                        </a>
+                    </li>
+                    <li>设置</li>
+                    <li class="info">
+                        <a href="javascript:void(0);">
+                            <img src="../../images/info.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </header>
+        </div>
+            <!-- 导航 -->
+        <div class="pub_nav cf">
+            <dl>
+                <a href="ware.html">
+                    <dt><img src="../../images/type.png"></dt>
+                    <dd>分类查询</dd>
+                </a>
+            </dl>
+            <dl>
+                <a href="../Shopping Cart/Shopping_cart.html">
+                    <dt><img src="../../images/car.png"></dt>
+                    <dd>购物车</dd>
+                </a>
+            </dl>
+            <dl>
+                <a href="../Shopping Cart/Shopping_order.html">
+                    <dt><img src="../../images/myorder.png"></dt>
+                    <dd>我的订单</dd>
+                </a>
+            </dl>
+            <dl>
+                <a href="personal_center.html">
+                    <dt><img src="../../images/home.png"></dt>
+                    <dd>个人中心</dd>
+                </a>
+            </dl>
+        </div>
+        <div class="content">
+            <a href="password_settings.html" class="cf">
+                <div class="fl">登录密码重设</div>
+                <div class="arrow fr"></div>
+            </a>
+            <a href="shipping_address.html" class="cf">
+                <div class="fl">收货地址重设</div>
+                <div class="arrow fr"></div>
+            </a>
+            <input class="btn btn-warn" value="退出登录" type="button"/>
+        </div>
+    </div>
+</body>
+</html>

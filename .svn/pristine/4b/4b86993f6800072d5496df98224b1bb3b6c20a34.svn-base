@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <!-- <meta name="viewport" content="initial-scale=1.0, user-scalable=no" /> -->
+    <title>待付款</title>
+    <link rel="stylesheet" type="text/css" href="../../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../../css/main.css">
+    <style>
+        #tiles{position:relative;} 
+        #tiles li{display:none;left: 0!important;} 
+    </style>
+    <script src="../../js/jquery-1.10.2.min.js"></script>
+    <script src="../../js/menu_list.js"></script>
+    <script src="../../js/jquery.wookmark.js"></script>
+</head>
+<body>
+    <div class="to_paid">
+    <!-- 公共头部 -->
+        <div class="pub_header">
+            <header>
+                <ul>
+                    <li class="back">
+                        <a href="javascript:history.go(-1);">
+                            <img src="../../images/back.png" alt="">
+                        </a>
+                    </li>
+                    <li>待付款</li>
+                    <li class="info">
+                        <a href="javascript:void(0);">
+                            <img src="../../images/info.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </header>
+        </div>
+            <!-- 导航 -->
+        <div class="pub_nav cf">
+            <dl>
+                <a href="ware.html">
+                    <dt><img src="../../images/type.png"></dt>
+                    <dd>分类查询</dd>
+                </a>
+            </dl>
+            <dl>
+                <a href="../Shopping Cart/Shopping_cart.html">
+                    <dt><img src="../../images/car.png"></dt>
+                    <dd>购物车</dd>
+                </a>
+            </dl>
+            <dl>
+                <a href="../Shopping Cart/Shopping_order.html">
+                    <dt><img src="../../images/myorder.png"></dt>
+                    <dd>我的订单</dd>
+                </a>
+            </dl>
+            <dl>
+                <a href="personal_center.html">
+                    <dt><img src="../../images/home.png"></dt>
+                    <dd>个人中心</dd>
+                </a>
+            </dl>
+        </div>
+        <div class="content"  id="main" role="main">
+            <ul id="tiles">
+                <li class="goods-wrap">
+                    <div class="list cf">
+                        <img src="../../images/jd_logo.png" alt="" class="fl jd-logo">
+                        <h2 class="fl">京东商城</h2>
+                    </div>
+                    <div class="goods-detail">
+                        <a href="javascript:;">
+                            <div class="goods-box cf">
+                                <div class="pic fl"><img src="../../images/temperature.png" alt=""></div>
+                                <p class="detail fl">20-27寸超薄苹果风格一体机电脑四核i3i5i7独显游戏 台式整机主机</p>
+                            </div>      
+                        </a>
+                        <div class="txt-point cf">
+                            <p class="fl pay-money">实付款:<span>XX</span>积分<span class="red">xzx</span>个</p>
+                            <div class="fr cf">
+                                <a href="#" class="btn-hollow btn-hollow-red fl">去支付</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="goods-wrap">
+                    <div class="list cf">
+                        <img src="../../images/jd_logo.png" alt="" class="fl jd-logo">
+                        <h2 class="fl">京东商城</h2>
+                    </div>
+                    <div class="goods-detail">
+                        <a href="javascript:;">
+                            <div class="goods-box cf">
+                                <div class="pic fl"><img src="../../images/temperature.png" alt=""></div>
+                                <p class="detail fl">20-27寸超薄苹果风格一体机电脑四核i3i5i7独显游戏 台式整机主机</p>
+                            </div>      
+                        </a>
+                        <div class="txt-point cf">
+                            <p class="fl pay-money">实付款:<span>XX</span>积分<span class="red">xzx</span>个</p>
+                            <div class="fr cf">
+                                <a href="#" class="btn-hollow btn-hollow-red fl">去支付</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="goods-wrap">
+                    <div class="list cf">
+                        <img src="../../images/jd_logo.png" alt="" class="fl jd-logo">
+                        <h2 class="fl">京东商城</h2>
+                    </div>
+                    <div class="goods-detail">
+                        <a href="javascript:;">
+                            <div class="goods-box cf">
+                                <div class="pic fl"><img src="../../images/temperature.png" alt=""></div>
+                                <p class="detail fl">20-27寸超薄苹果风格一体机电脑四核i3i5i7独显游戏 台式整机主机</p>
+                            </div>      
+                        </a>
+                        <div class="txt-point cf">
+                            <p class="fl pay-money">实付款:<span>XX</span>积分<span class="red">xzx</span>个</p>
+                            <div class="fr cf">
+                                <a href="#" class="btn-hollow btn-hollow-red fl">去支付</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    <script>
+        var handler = null;
+        var options = {
+          autoResize: true, 
+          container: $('#main')
+        };
+        
+        function onScroll(event) {
+          var closeToBottom = ($(window).scrollTop() + $(window).height() > $(document).height() - 100);
+          if(closeToBottom) {
+            var items = $('#tiles li');
+            var firstTen = items.slice(0, 10);
+            $('#tiles').append(firstTen.clone());
+            
+            if(handler) handler.wookmarkClear();
+            
+            handler = $('#tiles li');
+            handler.wookmark(options);
+          }
+        };
+      
+        $(document).ready(new function() {
+         
+          $(document).bind('scroll', onScroll);
+          
+          handler = $('#tiles li');
+          handler.wookmark(options);
+        });
+    </script>
+</body>
+</html>

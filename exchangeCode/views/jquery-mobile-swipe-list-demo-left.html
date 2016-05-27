@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+     <meta name="viewport"
+       content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+     <meta name = "format-detection" content = "telephone=no">
+     <meta name="msapplication-tap-highlight" content="no">
+     <title>列表</title>
+     <link rel="stylesheet" type="text/css" href="../css/base.css">
+     <link rel="stylesheet" type="text/css" href="../css/main.css">
+     <link rel="stylesheet" type="text/css" href="../css/jquery.mobile-1.4.3.min.css">
+     <script src="../js/jquery-1.8.3.min.js"></script>
+     <script src="../js/jquery.mobile-1.4.3.min.js"></script>
+    </head>
+<body>
+  <header>
+    <div class="pub-header">
+      <div class="back">
+        <a href="javascript:history.go(-1);">
+          <img src="../../images/back.png" alt="">
+        </a>
+      </div>
+      <div>确认订单</div>
+      <div class="header-menu">
+        <a href="javascript:void(0);">
+          <img src="../../images/list.png" alt="">
+        </a>
+      </div>  
+    </div>
+  </header>
+<div class=" content Shopping-order">
+    
+  <ul data-role="listview" class="swipe-delete">
+                    <li>
+                        <div class="behind">
+                            <a href="#" class="ui-btn delete-btn">Delete</a>
+                            <a href="#" class="ui-btn edit-btn pull-left">Edit</a>
+                        </div>
+                        <a href="#">item 1</a>
+                    </li>
+                    <li>
+                        <div class="behind">
+                            <a href="#" class="ui-btn delete-btn">Delete</a>
+                            <a href="#" class="ui-btn edit-btn pull-left">Edit</a>
+                        </div>
+                        <a href="#">item 2</a>
+                    </li>
+                    <li>
+                        <div class="behind">
+                            <a href="#" class="ui-btn delete-btn">Delete</a>
+                            <a href="#" class="ui-btn edit-btn pull-left">Edit</a>
+                        </div>
+                        <a href="#">item 3</a>
+                    </li>
+                    <li>
+                        <div class="behind">
+                            <a href="#" class="ui-btn delete-btn">Delete</a>
+                            <a href="#" class="ui-btn edit-btn pull-left">Edit</a>
+                        </div>
+                        <a href="#">item 4</a>
+                    </li>
+                    <li>
+                        <div class="behind">
+                            <a href="#" class="ui-btn delete-btn">Delete</a>
+                            <a href="#" class="ui-btn edit-btn pull-left">Edit</a>
+                        </div>
+                        <a href="#">item 5</a>
+                    </li>
+                    <li>
+                        <div class="behind">
+                            <a href="#" class="ui-btn delete-btn">Delete</a>
+                            <a href="#" class="ui-btn edit-btn pull-left">Edit</a>
+                        </div>
+                        <a href="#">item 6</a>
+                    </li>
+                    <li>
+                        <div class="behind">
+                            <a href="#" class="ui-btn delete-btn">Delete</a>
+                            <a href="#" class="ui-btn edit-btn pull-left">Edit</a>
+                        </div>
+                        <a href="#">item 7</a>
+                    </li>
+                    <li>
+                        <div class="behind">
+                            <a href="#" class="ui-btn delete-btn">Delete</a>
+                            <a href="#" class="ui-btn edit-btn pull-left">Edit</a>
+                        </div>
+                        <a href="#">item 8</a>
+                    </li>
+                    <li>
+                        <div class="behind">
+                            <a href="#" class="ui-btn delete-btn">Delete</a>
+                            <a href="#" class="ui-btn edit-btn pull-left">Edit</a>
+                        </div>
+                        <a href="#">item 9</a>
+                    </li>
+                    <li>
+                        <div class="behind">
+                            <a href="#" class="ui-btn delete-btn">Delete</a>
+                            <a href="#" class="ui-btn edit-btn pull-left">Edit</a>
+                        </div>
+                        <a href="#">item 10</a>
+                    </li>
+                    <li>
+                        <div class="behind">
+                            <a href="#" class="ui-btn delete-btn">Delete</a>
+                            <a href="#" class="ui-btn edit-btn pull-left">Edit</a>
+                        </div>
+                        <a href="#">item 11</a>
+                    </li>
+                    <li>
+                        <div class="behind">
+                            <a href="#" class="ui-btn delete-btn">Delete</a>
+                            <a href="#" class="ui-btn edit-btn pull-left">Edit</a>
+                        </div>
+                        <a href="#">item 12</a>
+                    </li>
+                    <li>
+                        <div class="behind">
+                            <a href="#" class="ui-btn delete-btn">Delete</a>
+                            <a href="#" class="ui-btn edit-btn pull-left">Edit</a>
+                        </div>
+                        <a href="#">item 13</a>
+                    </li>
+                    <li>
+                        <div class="behind">
+                            <a href="#" class="ui-btn delete-btn">Delete</a>
+                            <a href="#" class="ui-btn edit-btn pull-left">Edit</a>
+                        </div>
+                        <a href="#">item 14</a>
+                    </li>
+                    <li>
+                        <div class="behind">
+                            <a href="#" class="ui-btn delete-btn">Delete</a>
+                            <a href="#" class="ui-btn edit-btn pull-left">Edit</a>
+                        </div>
+                        <a href="#">item 15</a>
+                    </li>
+                </ul>
+
+</div>
+
+<div class="fotter">
+</div> 
+
+</body>
+<script type="text/javascript"> 
+   $(function() {
+    function prevent_default(e) {
+        e.preventDefault();
+    }
+    function disable_scroll() {
+        $(document).on('touchmove', prevent_default);
+    }
+    function enable_scroll() {
+        $(document).unbind('touchmove', prevent_default)
+    }
+    var x;
+    var flag = false;
+    $('.swipe-delete li > a')
+        .on('touchstart', function(e) {
+            setTimeout(function(){
+                $('.swipe-delete li > a').css('left', '0px') // close em all
+            }, 0);
+            x = e.originalEvent.targetTouches[0].pageX // anchor point
+        })
+        .on('touchmove', function(e) {
+            if(flag) {
+                return;
+            }
+            var change = e.originalEvent.targetTouches[0].pageX - x;
+            change = Math.min(Math.max(-100, change), 0) // restrict to -100px left, 0px right
+            e.currentTarget.style.left = change + 'px'
+            if (change < -10) {
+                disable_scroll() // disable scroll once we hit 10px horizontal slide
+            }
+        })
+        .on('touchend', function(e) {
+            if(flag) {
+                flag = false;
+                return;
+            }
+            var left = parseInt(e.currentTarget.style.left)
+            var new_left;
+            if (left < -35) {
+                flag = true;
+                new_left = '-100px'
+            } else if (left > 35) {
+                new_left = '100px'
+            } else {
+                new_left = '0px'
+            }
+            // e.currentTarget.style.left = new_left
+            $(e.currentTarget).animate({left: new_left}, 200)
+            enable_scroll()
+
+        });
+    $('li .delete-btn').on('touchend', function(e) {
+        e.preventDefault()
+        $(this).parents('li').slideUp('fast', function() {
+            $(this).remove()
+        })
+    })
+    $('li .edit-btn').on('touchend', function(e) {
+        e.preventDefault()
+        $(this).parents('li').children('a').html('edited')
+    })
+});
+</script>
+</html>

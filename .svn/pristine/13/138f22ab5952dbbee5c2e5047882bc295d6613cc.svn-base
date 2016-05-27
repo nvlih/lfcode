@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<title>登录页面</title>		
+		<link rel="stylesheet" type="text/css" href="../../css/base.css">
+    	<link rel="stylesheet" type="text/css" href="../../css/main.css">	
+    	<link rel="stylesheet" type="text/css" href="../../css/style.css">
+	</head>
+	<body >
+		<div class="home login">
+			<div class="pub_header">
+				<header>
+					<ul>
+						<li class="back">
+							<a  href="javascript:history.go(-1);">
+								<img src="../../images/back.png" alt="">
+							</a>
+						</li>
+						<li>登 录</li>
+						<li class="info">
+							<a href="javascript:void(0);">
+								<img src="../../images/info.png" alt="">
+							</a>
+						</li>
+					</ul>
+				</header>
+			</div>	
+			<!-- 导航 -->
+			<div class="pub_nav cf">
+				<dl>
+					<a href="../home/ware.html">
+						<dt><img src="../../images/type.png"></dt>
+						<dd>分类查询</dd>
+					</a>
+				</dl>
+				<dl>
+					<a href="../Shopping Cart/Shopping_cart.html">
+						<dt><img src="../../images/car.png"></dt>
+						<dd>购物车</dd>
+					</a>
+				</dl>
+				<dl>
+					<a href="../Shopping Cart/Shopping_order.html">
+						<dt><img src="../../images/myorder.png"></dt>
+						<dd>我的订单</dd>
+					</a>
+				</dl>
+				<dl>
+					<a href="../personalCenter/personal_center.html">
+						<dt><img src="../../images/home.png"></dt>
+						<dd>个人中心</dd>
+					</a>
+				</dl>
+			</div>
+			<!-- 内容 -->
+			<div class="content cf">
+				<div class="login_logo">
+					<img src="../../images/fl_logo.png" alt="">
+					<p>欢迎进入福利汇~</p>
+				</div>
+				<div class="logo_form">
+					<form name="login" class="userLogin">
+						<div class="title">
+							<a href="###" class="active">E王账号登录</a>
+							<a href="###">员工编号登录</a>
+						</div>
+						<input type="text" placeholder="请输入E网账号" class="name"  datatype="e | m" ajaxurl="" sucmsg="用户名验证通过" nullmsg="请输入E网账号" errormsg="请用邮箱或手机号码注册！">
+						<input type="text" placeholder="请输入密码" class="pass" datatype="*8-12" ajaxurl="" nullmsg="请输入密码" errormsg="请输入8-12位数字+字母">
+						<div class="yzm_box">
+							<input type="text" placeholder="请输验证码" class="yzm" datatype="*4-4" ajaxurl=""  nullmsg="验证码不能为空！">
+							<img src="../../images/yzm1.png" alt="">
+						</div>
+						<button class="btn" id="btn_sub">登录</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+	<script src="../../js/Validform_v5.3.2.js"></script>
+	<script src="../../js/menu_list.js"></script>
+	<script>
+		$(".userLogin").Validform({
+            btnSubmit:"#btn_sub", 
+            tiptype:1, 
+            datatype:{
+                "*2-18": /^[^\s]{2,18}$/,
+                "*8-12": /^[^\s]{8,12}$/
+            },
+            usePlugin:{
+                swfupload:{},
+                datepicker:{},
+                passwordstrength:{},
+                jqtransform:{
+                    selector:"select,input"
+                }
+            },
+            beforeCheck:function(curform){  
+            },
+            beforeSubmit:function(curform){  
+            },
+            callback:function(data){
+            }
+        });
+	</script>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<title>购物车</title>		
+		<link rel="stylesheet" type="text/css" href="../../css/base.css">
+        <link rel="stylesheet" type="text/css" href="../../css/main.css">
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/menu_list.js"></script>
+        <script src="../../js/jquery.wookmark.js"></script>
+	</head>
+<body>
+<div  class="Shopping">
+	<div class="pub_header">
+		<header>
+			<ul>
+				<li class="back">
+					<a href="javascript:void(0);">
+						<img src="../../images/back.png" alt="">
+					</a>
+				</li>
+				<li>购物车</li>
+				<li class="info">
+					<a href="javascript:void(0);">
+						<img src="../../images/info.png" alt="">
+					</a>
+				</li>
+			</ul>
+		</header>
+	</div>
+	<!-- 导航 -->
+  <div class="pub_nav cf">
+    <dl>
+      <a href="ware.html">
+        <dt><img src="../../images/type.png"></dt>
+        <dd>分类查询</dd>
+      </a>
+    </dl>
+    <dl>
+      <a href="../Shopping Cart/Shopping_cart.html">
+        <dt><img src="../../images/car.png"></dt>
+        <dd>购物车</dd>
+      </a>
+    </dl>
+    <dl>
+      <a href="../Shopping Cart/Shopping_order.html">
+        <dt><img src="../../images/myorder.png"></dt>
+        <dd>我的订单</dd>
+      </a>
+    </dl>
+    <dl>
+      <a href="../personalCenter/personal_center.html">
+        <dt><img src="../../images/home.png"></dt>
+        <dd>个人中心</dd>
+      </a>
+    </dl>
+  </div>
+    <div class="content">
+    <div class="title">
+        <div class="circle">
+            <div class="ui-check">
+            <i class="check-shopping"></i>
+            <input type="checkbox" class="cir allItem" name="items">
+            </div>
+        </div><div class="img"><img src="../../images/mall.png"><span>京东商城</span></div>
+    </div>	
+    <div class="wrap">
+      <div class="left">
+      <div class="circle">
+      <div class="ui-check">
+            <i class="check-shopping"></i>
+            <input type="checkbox" class="cir" name="items">
+            </div>
+      </div></div>
+      <div class="center"><img src="../../images/temperature1.png"></div>
+      <div class="right">
+          <p class="p_1">20—27寸超薄苹果风格一体机电脑四核i3i5i7独显游戏 台式整机主机</p>
+          <p class="p_2"><span name="price" class="price">4800</span>个积分</p>
+          <div class="input">
+                <div class="reduce">-</div>
+                <input type="text" value="1" class="number" name="items">
+                <div class="plus">+</div>
+           </div>
+        <p class="p_3">小计价格<span name="smtotal"></span>个积分</p>
+      </div>
+    </div> 
+    <div class="wrap">
+      <div class="left">
+      <div class="circle">
+      <div class="ui-check">
+            <i class="check-shopping"></i>
+            <input type="checkbox" class="cir" name="items">
+            </div>
+      </div></div>
+      <div class="center"><img src="../../images/temperature1.png"></div>
+      <div class="right">
+          <p class="p_1">20—27寸超薄苹果风格一体机电脑四核i3i5i7独显游戏 台式整机主机</p>
+          <p class="p_2"><span name="price" class="price">4800</span>个积分</p>
+          <div class="input">
+                <div class="reduce">-</div>
+                <input type="text" value="2" class="number" name="items">
+                <div class="plus">+</div>
+           </div>
+        <p class="p_3">小计价格<span name="smtotal"></span>个积分</p>
+      </div>
+    </div> 
+ </div>
+
+    <div class="content" style="border-top:1px solid #d3d3d3; margin-bottom:60px;">
+    <div class="title">
+        <div class="circle">
+        <div class="ui-check">
+            <i class="check-shopping"></i>
+            <input type="checkbox" class="cir allItem" name="items">
+            </div>
+        </div><div class="img"><img src="../../images/mall.png"><span>购物网</span></div>
+    </div>	
+    <div class="wrap">
+      <div class="left">
+      <div class="circle">
+      <div class="ui-check">
+            <i class="check-shopping"></i>
+            <input type="checkbox" class="cir" name="items">
+            </div>
+      </div></div>
+      <div class="center"><img src="../../images/temperature1.png"></div>
+      <div class="right">
+          <p class="p_1">20—27寸超薄苹果风格一体机电脑四核i3i5i7独显游戏 台式整机主机</p>
+          <p class="p_2"><span name="price" class="price">4800</span>个积分</p>
+          <div class="input">
+                <div class="reduce">-</div>
+                <input type="text" value="3" class="number" name="items">
+                <div class="plus">+</div>
+    	     </div>
+        <p class="p_3">小计价格<span name="smtotal"></span>个积分</p>
+      </div>
+    </div> 
+    <div class="wrap">
+      <div class="left">
+      <div class="circle">
+      <div class="ui-check">
+            <i class="check-shopping"></i>
+            <input type="checkbox" class="cir" name="items">
+            </div>
+      </div></div>
+      <div class="center"><img src="../../images/temperature1.png"></div>
+      <div class="right">
+          <p class="p_1">20—27寸超薄苹果风格一体机电脑四核i3i5i7独显游戏 台式整机主机</p>
+          <p class="p_2"><span name="price" class="price">4800</span>个积分</p>
+          <div class="input">
+                <div class="reduce">-</div>
+                <input type="text" value="4" class="number" name="items">
+                <div class="plus">+</div>
+    	     </div>
+          <p class="p_3">小计价格:<span name="smtotal"></span>个积分</p>
+      </div>
+    </div> 
+ </div>
+ <div class="fotter">
+    <div class="left">
+      <div class="circle">
+        <div class="ui-check">
+            <i class="check-shopping"></i>
+            <input type="checkbox" class="cir" id="checkAll">
+        </div>
+      </div>
+    </div>
+    <div class="center"><span class="span_1">全选</span><span class="span_2">合计：<span class="span_3" id="total"></span>个积分</span></div>
+   <div class="right"><a href="javascript(0)"><span class="span_4">去结算（1）</span></a></div>
+ </div>    
+</div> 
+
+</div>  
+</body>
+<script>
+        $(function(){
+            $(".cir").click(function(){ 
+                if($(this).is(":checked")){
+                    $(this).siblings(".check-shopping").addClass("checked-shopping");
+                }else{
+                    $(this).siblings(".check-shopping").removeClass("checked-shopping");
+                } 
+            });
+
+            // 初始化
+            var n=0;
+            $("span[name='smtotal']").each(function(){
+                $(this).html(($(this).parent().siblings('.input').children("input").val())*($(this).parent().siblings('.p_2').children('span[name="price"]').html()));
+                var html=$(this).html();
+                
+                html=+html;
+                n+=html
+                
+            });
+            $("#total").html(n)
+            // 点击减号
+            $(".reduce").click(function(){
+                var val=$(this).next("input").val();
+                if(val>0){
+                    val--;
+                    $(this).next("input").val(val);
+                    $(this).parent().next("p").children("span").html(val*$(this).parent().prev("p").children("span").html());
+                    calulate()
+                }
+            })
+            // 点击加号
+            $(".plus").click(function(){
+                var val=$(this).prev("input").val();
+
+                    val++;
+                $(this).prev("input").val(val);
+                $(this).parent().next("p").children("span").html(val*$(this).parent().prev("p").children("span").html());
+                calulate()
+            })
+            // 小全选按钮
+            //全选
+            $('#checkAll').click(function(){
+              if(this.checked){
+                $("input[type='checkbox']").prop("checked",true).siblings('.check-shopping').addClass("checked-shopping");
+                calulate();
+              }else{
+                $("input[type='checkbox']").prop("checked",false).siblings('.check-shopping').removeClass("checked-shopping");
+                calulate();
+              };
+            })
+
+            // 总计
+            function calulate(){
+                var n=0;
+                $("span[name='smtotal']").each(function(ele,i){
+                    var html=$(this).html();
+                    html=+html;
+                    n+=html
+                });
+               $("#total").html(n)
+            }
+
+        })
+    </script>
+</html>

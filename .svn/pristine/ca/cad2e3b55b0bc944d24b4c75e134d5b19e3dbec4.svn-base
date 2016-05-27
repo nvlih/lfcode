@@ -1,0 +1,222 @@
+﻿.behind {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .behind a.ui-btn {
+        width: 68px;
+        margin: 0px;
+        float: right;
+        border: none;
+    }
+    .behind a.delete-btn, .behind a.delete-btn:active, .behind a.delete-btn:visited, .behind a.delete-btn:focus, .behind a.delete-btn:hover {
+        color: white;
+        background-color: red;
+        text-shadow: none;
+    }
+    .behind a.ui-btn.pull-left {
+        float: left;
+    }
+    .behind a.edit-btn, .behind a.edit-btn:active, .behind a.edit-btn:visited, .behind a.edit-btn:focus, .behind a.edit-btn:hover {
+        color: white;
+        background-color: orange;
+        text-shadow: none;
+    }
+
+/*我的积分*/
+.my-integral-title{
+    color: #333;
+}
+.my-integral-title-span{ 
+    top: 0 !important;
+}
+.my-integral-title-span a{
+    font-size: 14px;
+    color: #333;  
+}
+.my-integral .top{
+    height: 160px;
+    background: url(../images/bg.png) no-repeat;
+    background-size: 100% 100%;
+}
+.my-integral .top img.logo_1{
+    width: 60px;
+    padding: 45px 10px 45px 20px;
+}
+.my-integral .top span{
+    color: #fff;
+    line-height: 150px;
+}
+.my-integral .top img.diamond{
+    width: 14px;
+    padding-top: 71px;
+}
+.my-integral .top i{
+    color: #fdaf17;
+    font-size: 24px;
+    padding-left: 6px;
+}
+.my-integral .top a{
+    float: right;
+}
+.my-integral .top img.replace{
+    width: 30px;
+    padding-top: 75px;
+    padding-right: 25px;
+}
+.my-integral .top p{
+     color: #fff;
+     padding-top: 5px;
+}
+.my-integral .main ul.nav, .my-change .main ul.nav{
+    background-color: #fff;
+    border-bottom: solid 1px #cecece;
+}
+.my-integral .main ul.nav li, .my-change .main ul.nav li{
+    width: 32.5%;
+    height: 42px;
+    line-height: 40px;
+    text-align: center;
+}
+.my-integral .main ul.nav li.a, .my-change .main ul.nav li.a{
+    width: 1%;
+    color: #d3d3d3;
+    font-size: 20px;
+    font-weight: lighter;
+}
+.my-integral .main ul.nav li.cur, .my-change .main ul.nav li.cur{
+    border-bottom: 2px solid #f39800;
+    color: #f39800;
+}
+.my-integral .main .first img.add{
+    width: 75px;
+    padding: 60px 160px 30px;
+}
+.my-integral .main .first .tip{
+    padding: 10px;
+    font-size: 14px;
+    text-align: center; 
+}
+.my-integral .main .first .tip img{
+    width: 18px;
+}
+.my-integral .main .first p.null{
+    text-align: center;
+}
+.my-integral .main .first .cont{
+    margin-bottom: 10px;
+    height: 100px;
+    background: url(../images/bg_2.png) no-repeat center center;
+    background-size: 95% 100%;   
+}
+.my-integral .main .first .cont .left{
+    width: 68%;
+}
+.my-integral .main .first .cont .right{
+    width: 30%;
+}
+.my-integral .main .first .cont .left img{
+    width: 70px;
+    padding: 15px 25px;
+    padding-right: 10px;
+}
+.my-integral .main .first .cont .left p{
+    padding-top: 23px;
+}
+.my-integral .main .first .cont .left p.red{
+    padding-top: 10px;
+    color: #fe4864;
+    font-size: 18px;
+}
+.my-integral .main .first .cont .right img{
+    width: 30px;  
+}
+.my-integral .main .first .cont .right p{
+    color: #333;
+    padding-top: 5px;
+    font-size: 14px;
+}
+.my-integral .main .first .cont .right .change{
+    padding: 25px 27px 0px 10px;
+}
+.my-integral .main .first .cont .right .extract{
+    padding-top: 25px;
+}
+.my-integral .main .middle .null-record{
+    text-align: center;
+    padding-top: 80px;
+    color: #999;
+}
+.my-integral .main .middle ul.list{
+    height: 80px;
+    font-size: 14px;
+    text-align: left;
+    background-color: #fff;
+    border-bottom: solid 1px #cecece;
+}
+.my-integral .main .middle .list .num{
+    padding: 15px 10px;
+}
+.my-integral .main .middle .list .state{
+    padding-left: 10px;
+}
+.my-integral .main .middle .list .time{
+    padding: 15px 10px;
+    color: #999;
+}
+.my-integral .main .middle .list .money{
+    padding-right: 10px;
+    float: right;
+}
+.my-integral .main .last img{
+    width: 90px;
+    padding: 60px 155px 30px;
+}
+.my-integral .main .last p{
+    text-align: center;
+    font-size:20px;
+}
+.gary{
+    color: #999; 
+}
+.reds{
+    color: #fe4864;
+}
+.my-change .main .one .tip p{
+    padding-top: 102px;
+    text-align: center;
+    color: #999;
+}
+.my-change .main .one .list{
+    height: 115px;
+    background-color: #fff;
+    border-bottom: solid 1px #cecece;
+}
+.my-change .main .one .list p.time{
+    padding: 8px 20px;
+    font-size: 13px;
+    color: #999;
+    width: 50%;
+}
+.my-change .main .one .list .out{
+    padding-left: 20px;
+    padding-top: 5px;
+}
+.my-change .main .one .list .out img{
+    width: 30px;
+    margin-top: -5px;
+}
+.margin{
+    margin-top: 10px;
+}
+.my-change .main .one .list .right{
+    padding-right: 20px;
+    margin-top: -20px;
+}
+.my-change .main .one .list .right p{
+    font-size: 12px;
+    color: #999;
+    padding-left: 16px;
+}

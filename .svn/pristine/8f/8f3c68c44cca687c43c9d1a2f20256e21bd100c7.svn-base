@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <!-- <meta name="viewport" content="initial-scale=1.0, user-scalable=no" /> -->
+    <title>个人中心</title>
+    <link rel="stylesheet" type="text/css" href="../../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../../css/main.css">
+    <script src="../../js/jquery-1.10.2.min.js"></script>
+    <script src="../../js/menu_list.js"></script>
+</head>
+<body>
+    <div class="personal_center">
+    <!-- 公共头部 -->
+        <div class="pub_header">
+            <header>
+                <ul>
+                    <li class="back">
+                        <a href="javascript:history.go(-1);">
+                            <img src="../../images/back.png" alt="">
+                        </a>
+                    </li>
+                    <li>个人中心</li>
+                    <li class="info">
+                        <a href="javascript:void(0);">
+                            <img src="../../images/info.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </header>
+        </div>
+            <!-- 导航 -->
+       <div class="pub_nav cf">
+            <dl>
+                <a href="ware.html">
+                    <dt><img src="../../images/type.png"></dt>
+                    <dd>分类查询</dd>
+                </a>
+            </dl>
+            <dl>
+                <a href="../Shopping Cart/Shopping_cart.html">
+                    <dt><img src="../../images/car.png"></dt>
+                    <dd>购物车</dd>
+                </a>
+            </dl>
+            <dl>
+                <a href="../Shopping Cart/Shopping_order.html">
+                    <dt><img src="../../images/myorder.png"></dt>
+                    <dd>我的订单</dd>
+                </a>
+            </dl>
+            <dl>
+                <a href="personal_center.html">
+                    <dt><img src="../../images/home.png"></dt>
+                    <dd>个人中心</dd>
+                </a>
+            </dl>
+        </div>
+        <div class="content">
+            <a href="javascript:;">
+                <div class="list cf">
+                    <img src="../../images/user.png" alt="" class="fl">
+                    <p class="name fl">这里是用户名</p>
+                </div>
+            </a>
+            <div class="space"></div>
+            <div class="list cf">
+                <a href="to_paid.html" class="list-module fl">
+                    <div>
+                        <i class="icon">
+                            <img src="../../images/payment.png" alt="">
+                            <span class="num">99</span>
+                        </i>
+                    </div>
+                    <p class="title">代付款</p>
+                </a>
+                <a href="receipt_goods.html" class="list-module fl">
+                    <div>
+                        <i class="icon">
+                            <img src="../../images/takeOver.png" alt="">
+                        </i>
+                    </div>
+                    <p class="title">待收货</p>
+                </a>
+                 <a href="already_finish.html" class="list-module fl">
+                    <div>
+                        <i class="icon">
+                            <img src="../../images/complete.png" alt="">
+                        </i>
+                    </div>
+                    <p class="title">已完成</p>
+                </a>
+                <a href="already_cancel.html" class="list-module fl">
+                    <div>
+                        <i class="icon">
+                            <img src="../../images/cancel.png" alt="">
+                            <span class="num">1</span>
+                        </i>
+                    </div>
+                    <p class="title">已取消</p>
+                </a>
+            </div>
+            <div class="space"></div>
+            <ul class="list cf personal-list">
+                <li class="fl first">
+                    <a href="javascript:;">
+                        <p class="point">账户余额:<span>600</span>积分</p>
+                        <p class="money">600</p>
+                        <p class="title">可提现积分</p>
+                    </a>
+                </li>
+                <li class="fl">
+                    <a href="integral_recharge.html">
+                        <img src="../../images/integralpay.png" alt="">
+                        <p class="title">积分充值</p>
+                    </a>
+                </li>
+                <li class="fl last">
+                    <a href="javascript:;">
+                        <img src="../../images/integralcash.png" alt="">
+                        <p class="title">积分兑换</p>
+                    </a>
+                </li>
+            </ul>
+            <ul class="list cf personal-list">
+                <li class="fl">
+                    <a href="install.html">
+                        <img src="../../images/setUp.png" alt="">
+                        <p class="title">设置</p>
+                    </a>
+                </li>
+                <li class="fl">
+                    <a href="javascript:;">
+                        <img src="../../images/life.png" alt="">
+                        <p class="title">生活缴费</p>
+                    </a>
+                </li>
+                <li class="fl last">
+                    <a href="javascript:;">
+                        <img src="../../images/medical.png" alt="">
+                        <p class="title">医疗挂号</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

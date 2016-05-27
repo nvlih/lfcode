@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<title>商品分类</title>		
+		<link rel="stylesheet" type="text/css" href="../../css/base.css">
+    	<link rel="stylesheet" type="text/css" href="../../css/main.css">	
+	</head>
+	<body>
+<div class="home homeware" id="container">
+	<div class="pub_header">
+		<header>
+			<ul>
+				<li class="back">
+					<a href="javascript:history.go(-1);">
+						<img src="../../images/back.png" alt="">
+					</a>
+				</li>
+				<li>商品分类</li>
+				<li class="info">
+					<a href="javascript:void(0);">
+						<img src="../../images/info.png" alt="">
+					</a>
+				</li>
+			</ul>
+		</header>
+	</div>
+	<!-- 导航 -->
+	<div class="pub_nav cf mynav" style="display:none;">
+		<dl>
+			<a href="ware.html">
+				<dt><img src="../../images/type.png"></dt>
+				<dd>分类查询</dd>
+			</a>
+		</dl>
+		<dl>
+			<a href="../Shopping Cart/Shopping_cart.html">
+				<dt><img src="../../images/car.png"></dt>
+				<dd>购物车</dd>
+			</a>
+		</dl>
+		<dl>
+			<a href="../Shopping Cart/Shopping_order.html">
+				<dt><img src="../../images/myorder.png"></dt>
+				<dd>我的订单</dd>
+			</a>
+		</dl>
+		<dl>
+			<a href="../personalCenter/personal_center.html">
+				<dt><img src="../../images/home.png"></dt>
+				<dd>个人中心</dd>
+			</a>
+		</dl>
+	</div>
+	<!-- 搜索 -->
+	<div class="search cf" id="search">
+		<input type="text" placeholder="快来搜搜……" value="快来搜搜……">
+	</div>
+	<!-- 内容 -->
+	<div class="content cf">
+		<div class="column" id="left" style="overflow-y: scroll">
+			<ul>
+				<li><a href="javascript:void(0);" name="column" class="active">酒水饮料</a></li>
+				<li><a href="javascript:void(0);" name="column">酒水饮料 嘿嘿 啤酒 白酒</a></li>
+				<li><a href="javascript:void(0);" name="column">酒水饮料</a></li>
+				<li><a href="javascript:void(0);" name="column">酒水饮料</a></li>
+				<li><a href="javascript:void(0);" name="column">酒水饮料</a></li>
+				<li><a href="javascript:void(0);" name="column">酒水饮料</a></li>
+				<li><a href="javascript:void(0);" name="column">酒水饮料</a></li>
+				<li><a href="javascript:void(0);" name="column">酒水饮料</a></li>
+				<li><a href="javascript:void(0);" name="column">酒水饮料</a></li>
+				<li><a href="javascript:void(0);" name="column">酒水饮料</a></li>
+				<li><a href="javascript:void(0);" name="column">饮料</a></li>
+			</ul>
+		</div>
+		<div class="ware" style="overflow-y: scroll" id="right">
+			<div class="ware_list" name="ware1">
+				<ul>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒</em>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="ware_list" name="ware1" style="display:none;">
+				<ul>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="ware_list" name="ware1" style="display:none;">
+				<ul>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="ware_list" name="ware1" style="display:none;">
+				<ul>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+					<li>
+						<a href="classList.html">
+							<img src="../../images/Alcohol.png">
+							<em>洋酒1</em>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+	</body>
+	<script src="../../js/jquery-1.8.3.min.js"></script>
+	
+	<script>
+	$(function(){
+		// 选项卡tab
+		var obj=document.getElementsByName("column");
+        var rig=document.getElementsByName("ware1")
+        for(var i=0;i<obj.length;i++){
+            (function(i){
+                obj[i].onclick=function(){
+                    for(var j=0;j<rig.length;j++){
+                        if(j==i){
+                            rig[j].style.display="block";
+                        }
+                        else{
+                            rig[j].style.display="none";
+                        }
+                    }
+
+            }}(i))
+        }
+        $(".column a").click(function(){
+        		 $(".column a").removeClass("active");
+      			 $(this).addClass("active").siblings().removeClass("active");
+		  });
+        // 导航
+        $(".info").toggle(function(){
+			$(".pub_nav").show();
+			$("#search").css("top","144px");
+			$("#container").css("padding-top","195px");
+			$("#left").css("top","195px")
+		},function(){
+			$(".pub_nav").hide();
+			$("#search").css("top","46px");
+			$("#container").css("padding-top","99px")
+			$("#left").css("top","99px")
+		})
+		$(".pub_nav dl").click(function(){
+			$(this).addClass("nav_bg").siblings().removeClass("nav_bg")
+		});
+		$("#left").scroll(function(e){
+			e.stopPropagation()
+		})
+	})
+	</script>
+</html>

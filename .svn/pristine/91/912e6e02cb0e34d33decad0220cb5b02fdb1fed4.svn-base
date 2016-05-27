@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <!-- <meta name="viewport" content="initial-scale=1.0, user-scalable=no" /> -->
+    <title>商品详情</title>
+    <link rel="stylesheet" type="text/css" href="../../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../../css/main.css">
+    <script src="../../js/jquery-1.10.2.min.js"></script>
+    <script src="../../js/menu_list.js"></script>
+</head>
+<body>
+    <div>
+    <!-- 公共头部 -->
+        
+            <!-- 导航 -->
+       
+        <div class="goods-detail">
+            <div class="content_tpl"><div class="formwork">
+                <div class="formwork_text">晨光（M&amp;G） BP0048 圆珠笔 0.7mm 24支装  蓝色</div>
+                </div><div class="formwork">
+                <div class="formwork_img"><img src="http://img20.360buyimg.com/vc/jfs/t2197/55/369566406/78141/8d6da20a/5603c4d6Nc7887e4d.jpg" /></div>
+                </div><div class="formwork">
+                <div class="formwork_img"><img src="http://img20.360buyimg.com/vc/jfs/t208/116/180033496/72823/49321c12/53831fdfNa591a438.jpg" /></div>
+                </div><html>
+                 <head></head>
+                 <body>
+                  <div class="formwork_bt" id="detail-tag-id-3" name="detail-tag-id-3" text="产品特色">
+                   <div class="formwork_bt_it">
+                    <span>产品特色</span>
+                    <span class="s2">Selling Point</span>
+                   </div>
+                  </div>
+                 </body>
+                </html><div class="formwork">
+                <div class="formwork_text">晨光（M&amp;G） BP0048 圆珠笔 蓝 0.7mm ，笔头采用不锈钢和镍白铜制造、碳化钨球珠，外观采用新型塑料，抗压、韧性强；笔内按动弹簧，经久耐用；本品适合支票、文件书写，字迹清晰不易褪色</div>
+                </div><div class="formwork">
+                <div class="formwork_img"><img src="http://img20.360buyimg.com/vc/jfs/t169/352/186391647/74864/a5e71cf8/5383203aN7a76e23b.jpg" /></div>
+                </div><div class="formwork">
+                <div class="formwork_img"><img src="http://img20.360buyimg.com/vc/jfs/t1777/165/1707322458/190586/c0a9f798/56052d9dNfcf89fd6.jpg" /></div>
+                </div><div class="formwork">
+                <div class="formwork_img"><img src="http://img20.360buyimg.com/vc/jfs/t565/329/369066842/95196/7266a341/54618842Ndefabc06.jpg" /></div>
+                </div><html>
+                 <head></head>
+                 <body>
+                  <div class="formwork_bt" id="detail-tag-id-8" name="detail-tag-id-8" text="品牌荣誉">
+                   <div class="formwork_bt_it">
+                    <span>品牌荣誉</span>
+                    <span class="s2">Brand Awards</span>
+                   </div>
+                  </div>
+                 </body>
+                </html><div class="formwork">
+                <div class="formwork_text">晨光（M&amp;G）致力于整合创意价值与服务优势, 专注于综合文具产业。综合文具用品涵盖书写工具、学生文具、办公文具及其他相关产品四大领域。晨光工业园拥有全流程生产车间、模具工程、设备研发中心，通过整合包括原料、技术、资本、市场、人才和创意资源，为客户提供性价比的文具用品，让学习和工作更快乐。一切创意，发自内心，源于智慧。
+                </div>
+                </div><div class="formwork">
+                <div class="formwork_img"><img src="http://img20.360buyimg.com/vc/jfs/t2353/319/389950602/335727/847475f7/56052c60Nd2577fa4.jpg" /></div>
+                </div></div>
+        </div>
+    </div>
+</body>
+</html>

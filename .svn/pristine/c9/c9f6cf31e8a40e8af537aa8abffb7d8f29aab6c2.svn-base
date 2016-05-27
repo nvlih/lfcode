@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<title>分类列表</title>		
+		<link rel="stylesheet" type="text/css" href="../../css/base.css">
+    	<link rel="stylesheet" type="text/css" href="../../css/main.css">	
+	</head>
+	<body>
+<div class="home classList">
+	<div class="pub_header">
+		<header>
+			<ul>
+				<li class="back">
+					<a href="javascript:void(0);">
+						<img src="../../images/back.png" alt="">
+					</a>
+				</li>
+				<li>洋酒</li>
+				<li class="info">
+					<a href="javascript:void(0);">
+						<img src="../../images/info.png" alt="">
+					</a>
+				</li>
+			</ul>
+		</header>
+	</div>
+	<!-- 导航 -->
+	<div class="pub_nav cf">
+		<dl>
+			<a href="ware.html">
+				<dt><img src="../../images/type.png"></dt>
+				<dd>分类查询</dd>
+			</a>
+		</dl>
+		<dl>
+			<a href="../Shopping Cart/Shopping_cart.html">
+				<dt><img src="../../images/car.png"></dt>
+				<dd>购物车</dd>
+			</a>
+		</dl>
+		<dl>
+			<a href="../Shopping Cart/Shopping_order.html">
+				<dt><img src="../../images/myorder.png"></dt>
+				<dd>我的订单</dd>
+			</a>
+		</dl>
+		<dl>
+			<a href="../personalCenter/personal_center.html">
+				<dt><img src="../../images/home.png"></dt>
+				<dd>个人中心</dd>
+			</a>
+		</dl>
+	</div>
+	<!-- 搜索导航 -->
+	<div class="search_nav cf">
+		<ul>
+			<li><a href="javascript:void(0);">默认</a></li>
+			<li>
+				<a href="javascript:void(0);">价格 <img src="../../images/Price.png" alt=""></a>			
+			</li>
+			<li>
+				<a href="javascript:void(0);">筛选 <img src="../../images/triangle.png" alt=""></a>		
+			</li>
+		</ul>
+	</div>
+	<!-- 搜索 -->
+	<div class="search cf">
+		<input type="text" placeholder="快来搜搜……" value="快来搜搜……">
+	</div>
+	
+	<!-- 内容 -->
+	<div class="content cf">
+			<div class="list1">
+					<div class="left">
+						<img src="../../images/Alcohol.png" alt="">
+					</div>
+					<div class="mid">
+						<p>法国特嘉葡萄酒</p>
+						<div class="price">
+							<span>4800</span>
+							<em>积分</em>
+						</div>
+					</div>
+					<div class="right">
+						<span>自营</span>
+					</div>
+			</div>
+			<div class="list1">
+					<div class="left">
+						<img src="../../images/Alcohol.png" alt="">
+					</div>
+					<div class="mid">
+						<p>法国特嘉葡萄酒</p>
+						<div class="price">
+							<span>4800</span>
+							<em>积分</em>
+						</div>
+					</div>
+					<div class="right">
+						<span>自营</span>
+					</div>
+			</div>
+			<div class="list1">
+					<div class="left">
+						<img src="../../images/Alcohol.png" alt="">
+					</div>
+					<div class="mid">
+						<p>法国特嘉葡萄酒</p>
+						<div class="price">
+							<span>4800</span>
+							<em>积分</em>
+						</div>
+					</div>
+					<div class="right">
+						<span>自营</span>
+					</div>
+			</div>
+			<div class="list1">
+					<div class="left">
+						<img src="../../images/Alcohol.png" alt="">
+					</div>
+					<div class="mid">
+						<p>法国特嘉葡萄酒</p>
+						<div class="price">
+							<span>4800</span>
+							<em>积分</em>
+						</div>
+					</div>
+					<div class="right">
+						<span>自营</span>
+					</div>
+			</div>
+			<div class="list1">
+					<div class="left">
+						<img src="../../images/Alcohol.png" alt="">
+					</div>
+					<div class="mid">
+						<p>法国特嘉葡萄酒</p>
+						<div class="price">
+							<span>4800</span>
+							<em>积分</em>
+						</div>
+					</div>
+					<div class="right">
+						<span>自营</span>
+					</div>
+			</div>
+	</div>
+</div>
+	</body>
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+	<script src="../../js/menu_list.js"></script>
+	<script>
+		$(function(){
+			$(".search_nav li a").click(function(){
+	        		$(".search_nav li a").removeClass("active");
+	      			 	$(this).addClass("active").siblings().removeClass("active");
+			  		});
+			})
+	</script>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <!-- <meta name="viewport" content="initial-scale=1.0, user-scalable=no" /> -->
+    <title>收支明细</title>
+    <link rel="stylesheet" type="text/css" href="../../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../../css/main.css">
+    <script src="../../js/jquery-1.10.2.min.js"></script>
+    <script src="../../js/menu_list.js"></script>
+</head>
+<body>
+    <div class="payment_details">
+    <!-- 公共头部 -->
+        <div class="pub_header">
+            <header>
+                <ul>
+                    <li class="back">
+                        <a href="javascript:history.go(-1);">
+                            <img src="../../images/back.png" alt="">
+                        </a>
+                    </li>
+                    <li>收支明细</li>
+                    <li class="info">
+                        <a href="javascript:void(0);">
+                            <img src="../../images/info.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </header>
+        </div>
+            <!-- 导航 -->
+       <div class="pub_nav cf">
+            <dl>
+                <a href="ware.html">
+                    <dt><img src="../../images/type.png"></dt>
+                    <dd>分类查询</dd>
+                </a>
+            </dl>
+            <dl>
+                <a href="../Shopping Cart/Shopping_cart.html">
+                    <dt><img src="../../images/car.png"></dt>
+                    <dd>购物车</dd>
+                </a>
+            </dl>
+            <dl>
+                <a href="../Shopping Cart/Shopping_order.html">
+                    <dt><img src="../../images/myorder.png"></dt>
+                    <dd>我的订单</dd>
+                </a>
+            </dl>
+            <dl>
+                <a href="personal_center.html">
+                    <dt><img src="../../images/home.png"></dt>
+                    <dd>个人中心</dd>
+                </a>
+            </dl>
+        </div>
+        <div class="content">
+            <ul class="cf menu">
+                <li class="fl cur">全部</li>
+                <li class="fl">收入</li>
+                <li class="fl">支出</li>
+            </ul>
+            <div class="message-detail first">
+                <p class="period">本月</p>
+                <a href="javascript:;">
+                    <ul class="list cf">
+                        <li class="fl">
+                            <div class="type">在线支付</div>
+                            <div class="date">2016-03-01</div>
+                        </li>
+                        <li class="fr integral"><span class="negative">-760</span> 积分</li>
+                    </ul>
+                </a>
+                <a href="javascript:;">
+                    <ul class="list cf">
+                        <li class="fl">
+                            <div class="type">充值</div>
+                            <div class="date">2016-03-01</div>
+                        </li>
+                        <li class="fr integral"><span>+100</span> 积分</li>
+                    </ul>
+                </a>
+                <a href="javascript:;">
+                    <ul class="list cf">
+                        <li class="fl">
+                            <div class="type">交易退款</div>
+                            <div class="date">2016-03-01</div>
+                        </li>
+                        <li class="fr integral"><span>+500</span> 积分</li>
+                    </ul>
+                </a>
+            </div>
+            <div class="message-detail middle">
+                <p class="period">本月</p>
+                <a href="javascript:;">
+                    <ul class="list cf">
+                        <li class="fl">
+                            <div class="type">交易退款</div>
+                            <div class="date">2016-03-01</div>
+                        </li>
+                        <li class="fr integral"><span>+500</span> 积分</li>
+                    </ul>
+                </a>
+                <a href="javascript:;">
+                    <ul class="list cf">
+                        <li class="fl">
+                            <div class="type">充值</div>
+                            <div class="date">2016-03-01</div>
+                        </li>
+                        <li class="fr integral"><span>+100</span> 积分</li>
+                    </ul>
+                </a>
+            </div>
+            <div class="message-detail last">
+                <p class="period">本月</p>
+                <a href="javascript:;">
+                    <ul class="list cf">
+                        <li class="fl">
+                            <div class="type">在线支付</div>
+                            <div class="date">2016-03-01</div>
+                        </li>
+                        <li class="fr integral"><span class="negative">-760</span> 积分</li>
+                    </ul>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function(){
+            $('.middle,.last').hide();
+            $('.menu li').click(function(){
+                $(this).addClass('cur').siblings().removeClass('cur');
+                var index = $(this).index();
+                $('.message-detail').eq(index).show().siblings('.message-detail').hide();
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <!-- <meta name="viewport" content="initial-scale=1.0, user-scalable=no" /> -->
+    <title>积分提现</title>
+    <link rel="stylesheet" type="text/css" href="../../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <script src="../../js/jquery-1.10.2.min.js"></script>
+    <script src="../../js/menu_list.js"></script>
+    <script src="../../js/Validform_v5.3.2.js"></script>
+</head>
+<body>
+    <div class="withdrawal_amount_two">
+    <!-- 公共头部 -->
+        <div class="pub_header">
+            <header>
+                <ul>
+                    <li class="back">
+                        <a href="javascript:history.go(-1);">
+                            <img src="../../images/back.png" alt="">
+                        </a>
+                    </li>
+                    <li>积分提现</li>
+                    <li class="info">
+                        <a href="javascript:void(0);">
+                            <img src="../../images/info.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </header>
+        </div>
+            <!-- 导航 -->
+        <div class="pub_nav cf">
+            <dl>
+                <a href="ware.html">
+                    <dt><img src="../../images/type.png"></dt>
+                    <dd>分类查询</dd>
+                </a>
+            </dl>
+            <dl>
+                <a href="../Shopping Cart/Shopping_cart.html">
+                    <dt><img src="../../images/car.png"></dt>
+                    <dd>购物车</dd>
+                </a>
+            </dl>
+            <dl>
+                <a href="../Shopping Cart/Shopping_order.html">
+                    <dt><img src="../../images/myorder.png"></dt>
+                    <dd>我的订单</dd>
+                </a>
+            </dl>
+            <dl>
+                <a href="personal_center.html">
+                    <dt><img src="../../images/home.png"></dt>
+                    <dd>个人中心</dd>
+                </a>
+            </dl>
+        </div>
+        <form action="" class="msgform">
+            <div class="content">
+                <div class="list first cf">
+                    <div class="title fl">持卡人</div>
+                    <input type="text" class="fl" placeholder="请输入持卡人姓名" datatype="s2-6" ajaxurl="" errormsg="姓名至少2个字符,最多6个字符！" nullmsg="请输入持卡人姓名！">
+                </div>
+                <div class="list cf">
+                    <div class="title fl">卡 号</div>
+                    <input type="text" class="fl" placeholder="请输入银行卡号" datatype="n" ajaxurl="" errormsg="卡号有误！" nullmsg="请输入银行卡号！" name="num1">
+                </div>
+                <div class="list cf">
+                    <div class="title fl">确 认</div>
+                    <input type="text" class="fl" placeholder="请输入银行卡号" datatype="n" ajaxurl="" errormsg="两次输入卡号不同！" nullmsg="请确认银行卡号！" recheck="num1">
+                </div>
+                <div class="list card-type cf">
+                    <div class="title fl">银 行</div>
+                    <input type="text" class="fl" readonly id="cardName">
+                    <div class="chosen-type">
+                        <select id="bankName" datatype="*" nullmsg="请选择发卡银行！">
+                            <option>招商银行</option>
+                            <option>中国银行</option>
+                            <option>建设银行</option>
+                        </select>
+                        <!-- <i class="arrow"></i> -->
+                    </div>
+                </div>
+                <div class="list card-type cf">
+                    <div class="title fl">省 份</div>
+                    <input type="text" class="fl" readonly id="province">
+                    <div class="chosen-type">
+                        <select id="provinceName" datatype="*" nullmsg="请选择发卡银行！">
+                            <option>北京</option>
+                            <option>上海</option>
+                            <option>深圳</option>
+                        </select>
+                        <!-- <i class="arrow"></i> -->
+                    </div>
+                </div>
+                <div class="list card-type cf">
+                    <div class="title fl">地 市</div>
+                    <input type="text" class="fl" readonly id="city">
+                    <div class="chosen-type">
+                        <select id="cityName" datatype="*" nullmsg="请选择发卡银行！">
+                            <option>昌平</option>
+                            <option>大兴</option>
+                            <option>朝阳</option>
+                        </select>
+                        <!-- <i class="arrow"></i> -->
+                    </div>
+                </div>
+                <div class="list cf">
+                    <div class="title fl">银 行</div>
+                    <input type="text" class="fl" placeholder="开卡所在的具体支行" datatype="*" ajaxurl="" nullmsg="请输入银行支行！">
+                </div>
+                <div class="list cf">
+                    <div class="title fl mt">电 话</div>
+                    <input type="text" class="fl mt" placeholder="银行预留电话" datatype="m" nullmsg="请输入电话号码！" errormsg="号码有误！">
+                </div>
+                <div class="space"></div>
+                <div class="list cf">
+                    <div class="title fl mt">金 额</div>
+                    <input type="text" class="fl mt" placeholder="请输入提现金额" datatype="n" nullmsg="请输入提现金额！" errormsg="金额有误！">
+                </div>
+                <div class="point">*每天累计最大提现金额为5000.00元</div>
+                <div class="point">*储蓄卡充值可提现，信用卡充值不可提现</div>
+                <input class="btn" value="确 定" type="button" id="btn_sub" />
+            </div>
+        </form>
+    </div>
+    <script>
+        $(function(){
+            $("#cardName").val($("#bankName").val());
+            $("#province").val($("#provinceName").val());
+            $("#city").val($("#cityName").val());
+            $("#bankName").change(function(){
+                $("#cardName").val($("#bankName").val());
+            });
+            $("#provinceName").change(function(){
+                $("#province").val($("#provinceName").val());
+            });
+             $("#cityName").change(function(){
+                $("#city").val($("#cityName").val());
+            });
+
+            // 表单
+            $(".msgform").Validform({
+                btnSubmit:"#btn_sub", 
+                tiptype:1, 
+                datatype:{
+                },
+                usePlugin:{
+                    swfupload:{},
+                    datepicker:{},
+                    passwordstrength:{},
+                    jqtransform:{
+                        selector:"select,input"
+                    }
+                },
+                beforeCheck:function(curform){  
+                },
+                beforeSubmit:function(curform){  
+                },
+                callback:function(data){
+                }
+            });
+        })
+    </script>
+</body>
+</html>
