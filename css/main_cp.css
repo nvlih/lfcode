@@ -1,0 +1,16 @@
+.header header img{
+	vertical-align: middle;
+}
+
+.swiper-container{
+	padding-top:14px;
+	text-align: center
+}
+
+.pub_header{
+	text-align: center;
+}
+.swiper-slide img{
+	width:40%;
+	height:160px;
+}

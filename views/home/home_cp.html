@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>首页</title>	
+	<link rel="stylesheet" type="text/css" href="../../css/main_cp.css">
+	<link rel="stylesheet" type="text/css" href="../../css/swiper.min.css">
+</head>
+
+<body>
+
+	<div class="header">
+		<header class="pub_header">
+					<img src="../../images/logo.png">
+		</header>
+	</div>
+
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide"><img src="../../images_cp/57428210N66b38bf7.jpg"></div>
+			<div class="swiper-slide"><img src="../../images_cp/5743b9dcN5eb4c273.jpg"></div>
+			<div class="swiper-slide"><img src="../../images_cp/57465dd0Na690c5de.jpg"></div>
+		</div>
+		<div class="swiper-pagination"></div>
+	</div>
+
+	<div class="pub_nav">
+		<dl>
+			<a href="">
+				<dt><img src="../../images/type.png"></dt>
+				<dd>分类查询</dd>
+			</a>
+		</dl>
+		<dl>
+			<a href="">
+				<dt><img src="../../images/car.png"></dt>
+				<dd>购物车</dd>
+			</a>
+		</dl>
+		<dl>
+			<a href="">
+				<dt><img src="../../images/myorder.png"></dt>
+				<dd>我的订单</dd>
+			</a>
+		</dl>
+		<dl>
+			<a href="">
+				<dt><img src="../../images/personcenter.png"></dt>
+				<dd>个人中心</dd>
+			</a>
+		</dl>
+	</div>
+
+	<script src="../../js/swiper.min.js"></script>
+</body>
+
+</html>
+<script>
+var swiper = new Swiper('.swiper-container',{
+				pagination: '.swiper-pagination',
+			    paginationBulletRender: function (index, className) {
+			      return '<span class="' + className + '">' + (index + 1) + '</span>';
+			  	}
+			});
+</script>
