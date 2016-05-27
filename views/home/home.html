@@ -36,14 +36,10 @@
 				</div>     
     		</div>
 			<!-- 轮播图 -->
-			<div class="">
-				<a href="###">
-					<img src="../../images/slider.png" alt="">
-				</a>
-			</div>
+		
 			<div class="swiper-container">
 				<div class="swiper-wrapper">
-					<div class="swiper-slide"><img src="../../images/12.jpg"></div>
+					<div class="swiper-slide"><img src="../../images/slider.png"></div>
 					<div class="swiper-slide"><img src="../../images/slider.png"></div>
 					<div class="swiper-slide"><img src="../../images/slider.png"></div>
 					<div class="swiper-slide"><img src="../../images/slider.png"></div>
@@ -260,10 +256,10 @@
 	<script>
 		var swiper = new Swiper('.swiper-container',{
 				pagination: '.swiper-pagination',
-				loop: false,
-				grabCursor: true,
-				paginationClickable: true,
-				autoplay: 5000
+			    paginationClickable: true,
+			    paginationBulletRender: function (index, className) {
+			      return '<span class="' + className + '">' + (index + 1) + '</span>';
+			  	}
 			});
 		$(function(){
 			$(".search_con").focus(function(){
