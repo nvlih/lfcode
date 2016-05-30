@@ -15,9 +15,22 @@
 	height:160px;
 }
 
-pub_nav dl {
+.pub_nav dl {
   float: left;
   width: 25%;
   margin: 10px auto;
   height: 100%;
+}
+.pub_nav{
+	width: 100%;
+	text-align: center;
+/*    height: 96px;
+    display: block !important;	*/
+}
+.pub_nav dd {
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
 }
