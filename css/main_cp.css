@@ -14,3 +14,10 @@
 	width:40%;
 	height:160px;
 }
+
+pub_nav dl {
+  float: left;
+  width: 25%;
+  margin: 10px auto;
+  height: 100%;
+}
